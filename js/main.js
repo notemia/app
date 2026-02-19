@@ -18,21 +18,19 @@ const T = {
   nav_privacy:    { ru: "Приватность",  en: "Privacy" },
 
   // Hero
-  hero_badge:   { ru: "5 приложений для практики и роста", en: "5 apps for practice & growth" },
+  hero_badge:   { ru: "Приложения для iPhone, iPad и Mac", en: "Apps for iPhone, iPad and Mac" },
   hero_title_1: { ru: "Инструменты для",     en: "Tools for" },
   hero_title_2: { ru: "психологов и клиентов", en: "psychologists & clients" },
   hero_sub: {
-    ru: "Навигатор по запросам клиентов, модальностям и книгам. Дневник мыслей: когнитивные искажения и рефрейминг. Эмоции через тело: чек-ин и практики регуляции. Отношения: стадии, кризисы, привязанность (Готтман, ЭФТ). Концепции, сценарии, развитие ключевых способностей, рекомендуемые книги для психоаналитиков.",
-    en: "Navigator for client requests, modalities & books. Thought journal: cognitive distortions & reframing. Emotions through the body: check-in & regulation practices. Relationships: stages, crises, attachment (Gottman, EFT). Concepts, scenarios, developing core capabilities, recommended books for psychoanalysts."
+    ru: "Навигатор по запросам клиентов, модальностям и книгам. Дневник мыслей: когнитивные искажения и рефрейминг. Эмоции через тело: чек-ин и практики регуляции. Отношения: стадии, кризисы, типы привязанности. Концепции, сценарии, развитие ключевых способностей, рекомендуемые книги для психоаналитиков.",
+    en: "Navigator for client requests, modalities & books. Thought journal: cognitive distortions & reframing. Emotions through the body: check-in & regulation practices. Relationships: stages, crises, attachment types. Concepts, scenarios, developing core capabilities, recommended books for psychoanalysts."
   },
   hero_cta:      { ru: "Смотреть приложения", en: "View Apps" },
+  hero_notemia_cta: { ru: "AI-ассистент для практики", en: "" },
   stat_apps:     { ru: "приложений",          en: "apps" },
   stat_books:    { ru: "книг и статей",       en: "books & articles" },
-  stat_tracking: { ru: "трекинга",            en: "tracking" },
-
   // Apps section
-  apps_label: { ru: "Экосистема",                     en: "Ecosystem" },
-  apps_title: { ru: "Приложения для каждого этапа",    en: "An App for Every Stage" },
+  apps_title: { ru: "Приложения полезные в практике психолога", en: "Apps useful in psychologist practice" },
   apps_sub: {
     ru: "Навигатор по литературе и запросам клиентов (PsyMap). Работа с мыслями и искажениями (2Reframe), с эмоциями через тело (Feel It). Отношения по научным моделям (Couple Bridge). Концепции, сценарии, развитие ключевых способностей, рекомендуемые книги для психоаналитиков (Becoming Analyst).",
     en: "Literature & client-request navigator (PsyMap). Thought & distortion work (2Reframe), emotions through the body (Feel It). Relationships via evidence-based models (Couple Bridge). Concepts, scenarios, core capabilities, recommended books for psychoanalysts (Becoming Analyst)."
@@ -153,8 +151,8 @@ const T = {
   // CTA
   cta_title:  { ru: "Начните с того, что ближе",  en: "Start With What's Closest" },
   cta_sub: {
-    ru: "Выберите приложение, которое решает вашу задачу прямо сейчас. Скачайте бесплатно. Попробуйте без регистрации.",
-    en: "Choose the app that solves your need right now. Download free. Try without registration."
+    ru: "Выберите приложение, которое решает вашу задачу прямо сейчас.",
+    en: "Choose the app that solves your need right now."
   },
   cta_action: { ru: "К приложениям", en: "Go to Apps" },
 
