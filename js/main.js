@@ -23,8 +23,8 @@ const T = {
   hero_title_1: { ru: "Инструменты для",              en: "Tools for" },
   hero_title_2: { ru: "психологов и клиентов",        en: "psychologists & clients" },
   hero_sub: {
-    ru: "Для терапевтов: концепции, клинические сценарии, протоколы и рефлексия — для КПТ, гештальта и психоанализа. Для клиентов: дневник мыслей, эмоции через тело, понимание отношений.",
-    en: "For therapists: concepts, clinical scenarios, protocols and reflection — for CBT, Gestalt and psychoanalysis. For clients: thought journal, emotions through the body, relationship insight."
+    ru: "Учебный навигатор для студентов и начинающих психологов — структура знаний, типичные запросы, сценарии, развитие ключевых навыков, рефлексия и многое другое. Для клиентов: дневник мыслей, распознавание эмоций через тело, понимание отношений, кризисы, типы привязанностей.",
+    en: "A study navigator for psychology students and beginners — knowledge structure, typical requests, scenarios, key skill development, reflection and more. For clients: thought journal, recognising emotions through the body, relationship insight, crises, attachment types."
   },
   hero_cta:         { ru: "Смотреть приложения",       en: "View Apps" },
   hero_notemia_cta: { ru: "AI-ассистент для практики", en: "" },
