@@ -238,8 +238,6 @@ const T = {
   faq_a2: { ru: "Нет. Все данные хранятся только на вашем устройстве. Регистрация не требуется.", en: "No. All data is stored on your device only. No registration required." },
   faq_q3: { ru: "Это замена терапии?", en: "Is this a replacement for therapy?" },
   faq_a3: { ru: "Нет. Все приложения — образовательные инструменты. Они не заменяют терапию, супервизию или обращение к специалисту.", en: "No. All apps are educational tools. They do not replace therapy, supervision, or professional help." },
-  faq_q4: { ru: "Как восстановить подписку?", en: "How do I restore my subscription?" },
-  faq_a4: { ru: "Откройте Настройки → Подписка → Восстановить покупки. Используйте тот же Apple ID.", en: "Go to Settings → Subscription → Restore Purchases. Use the same Apple ID." },
   faq_q5: { ru: "Какие устройства поддерживаются?", en: "What devices are supported?" },
   faq_a5: { ru: "iPhone и iPad с iOS 17+. Некоторые приложения также доступны на macOS 14+.", en: "iPhone and iPad with iOS 17+. Some apps are also available on macOS 14+." },
 
