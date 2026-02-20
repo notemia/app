@@ -4,53 +4,139 @@
 
 // ── i18n translations ──
 const T = {
-  // Meta
+
+  // ── Meta ──────────────────────────────────────
   meta_title: {
-    ru: "Notemia apps. Приложения для психологов и их клиентов",
-    en: "Notemia apps. Apps for Psychologists and Their Clients"
+    ru: "Notemia apps — приложения для психологов и их клиентов",
+    en: "Notemia apps — apps for psychologists and their clients"
   },
 
-  // Nav
-  nav_apps:       { ru: "Приложения",   en: "Apps" },
-  nav_audience:   { ru: "Для кого",     en: "For Whom" },
-  nav_principles: { ru: "Принципы",     en: "Principles" },
-  nav_support:    { ru: "Поддержка",    en: "Support" },
-  nav_privacy:    { ru: "Приватность",  en: "Privacy" },
+  // ── Nav ───────────────────────────────────────
+  nav_apps:       { ru: "Приложения",  en: "Apps" },
+  nav_audience:   { ru: "Для кого",   en: "For Whom" },
+  nav_principles: { ru: "Принципы",   en: "Principles" },
+  nav_support:    { ru: "Поддержка",  en: "Support" },
+  nav_privacy:    { ru: "Приватность", en: "Privacy" },
 
-  // Hero
+  // ── Hero ──────────────────────────────────────
   hero_badge:   { ru: "Приложения для iPhone, iPad и Mac", en: "Apps for iPhone, iPad and Mac" },
-  hero_title_1: { ru: "Инструменты для",     en: "Tools for" },
-  hero_title_2: { ru: "психологов и клиентов", en: "psychologists & clients" },
+  hero_title_1: { ru: "Инструменты для",              en: "Tools for" },
+  hero_title_2: { ru: "психологов и клиентов",        en: "psychologists & clients" },
   hero_sub: {
-    ru: "Навигатор по запросам клиентов, модальностям и книгам. Дневник мыслей: когнитивные искажения и рефрейминг. Эмоции через тело: чек-ин и практики регуляции. Отношения: стадии, кризисы, типы привязанности. Концепции, сценарии, развитие ключевых способностей, рекомендуемые книги для психоаналитиков.",
-    en: "Navigator for client requests, modalities & books. Thought journal: cognitive distortions & reframing. Emotions through the body: check-in & regulation practices. Relationships: stages, crises, attachment types. Concepts, scenarios, developing core capabilities, recommended books for psychoanalysts."
+    ru: "Для терапевтов: концепции, клинические сценарии, протоколы и рефлексия — для КПТ, гештальта и психоанализа. Для клиентов: дневник мыслей, эмоции через тело, понимание отношений.",
+    en: "For therapists: concepts, clinical scenarios, protocols and reflection — for CBT, Gestalt and psychoanalysis. For clients: thought journal, emotions through the body, relationship insight."
   },
-  hero_cta:      { ru: "Смотреть приложения", en: "View Apps" },
+  hero_cta:         { ru: "Смотреть приложения",       en: "View Apps" },
   hero_notemia_cta: { ru: "AI-ассистент для практики", en: "" },
-  tag_this_spring:  { ru: "этой весной", en: "This spring" },
-  stat_apps:     { ru: "приложений",          en: "apps" },
-  stat_books:    { ru: "книг и статей",       en: "books & articles" },
-  // Apps section
-  apps_title: { ru: "Приложения полезные в практике психолога", en: "Apps useful in psychologist practice" },
+  tag_this_spring:  { ru: "этой весной",                en: "This spring" },
+  stat_apps:        { ru: "приложений",                 en: "apps" },
+  stat_books:       { ru: "книг и статей",              en: "books & articles" },
+
+  // ── Apps section ──────────────────────────────
+  apps_title: {
+    ru: "Приложения для практики и роста",
+    en: "Apps for Practice & Growth"
+  },
   apps_sub: {
-    ru: "Навигатор по литературе и запросам клиентов (PsyMap). Работа с мыслями и искажениями (2Reframe), с эмоциями через тело (Learn to Feel). Отношения по научным моделям (Couple Bridge). Концепции, сценарии, развитие ключевых способностей, рекомендуемые книги для психоаналитиков (Becoming Analyst).",
-    en: "Literature & client-request navigator (PsyMap). Thought & distortion work (2Reframe), emotions through the body (Learn to Feel). Relationships via evidence-based models (Couple Bridge). Concepts, scenarios, core capabilities, recommended books for psychoanalysts (Becoming Analyst)."
+    ru: "Инструменты для психологов разных направлений и для их клиентов. От первой сессии до глубокой рефлексии.",
+    en: "Tools for therapists across modalities and for their clients. From the first session to deep reflection."
   },
 
-  // PsyMap
+  // ── Group headers ─────────────────────────────
+  group_pro_label:    { ru: "Для психологов",                    en: "For Psychologists" },
+  group_pro_title:    { ru: "Профессиональный рост и рефлексия", en: "Professional Growth & Reflection" },
+  group_pro_count:    { ru: "4 приложения",                      en: "4 apps" },
+  group_clients_label: { ru: "Для клиентов",                     en: "For Clients" },
+  group_clients_title: { ru: "Самопомощь между сессиями",        en: "Self-Help Between Sessions" },
+  group_clients_count: { ru: "3 приложения",                     en: "3 apps" },
+
+  // ── PsyMap ────────────────────────────────────
   psymap_badge:   { ru: "Для специалистов", en: "For Professionals" },
-  psymap_tagline: { ru: "Учебный навигатор для студентов и начинающих психологов", en: "Study navigator for students and beginning psychologists" },
+  psymap_tagline: {
+    ru: "Учебный навигатор для студентов и начинающих психологов",
+    en: "Study navigator for psychology students and beginners"
+  },
   psymap_desc: {
     ru: "20 типичных запросов клиентов с навигатором: формулировки, подготовка к сессии, красные флаги, супервизия. 6 модальностей, 50+ брифов книг, научные статьи. Всё в одном месте от первого клиента до уверенной практики.",
-    en: "20 typical client requests with navigator: formulations, session prep, red flags, supervision. 6 modalities, 50+ book briefs, scientific articles. Everything in one place from first client to confident practice."
+    en: "20 typical client requests with a navigator: formulations, session prep, red flags, supervision. 6 modalities, 50+ book briefs, scientific articles. Everything in one place from the first client to confident practice."
   },
   psymap_f1: { ru: "20 запросов клиентов", en: "20 client requests" },
-  psymap_f2: { ru: "6 модальностей",      en: "6 modalities" },
-  psymap_f3: { ru: "50+ книг",            en: "50+ books" },
-  psymap_f4: { ru: "Офлайн",              en: "Offline" },
+  psymap_f2: { ru: "6 модальностей",       en: "6 modalities" },
+  psymap_f3: { ru: "50+ книг",             en: "50+ books" },
+  psymap_f4: { ru: "Офлайн",               en: "Offline" },
 
-  // Couple Bridge
-  couple_badge:   { ru: "Для пар", en: "For Couples" },
+  // ── Becoming Analyst ──────────────────────────
+  analyst_badge:   { ru: "Психоанализ", en: "Psychoanalysis" },
+  analyst_tagline: {
+    ru: "Среда профессионального становления для психоаналитиков",
+    en: "Professional development environment for psychoanalysts"
+  },
+  analyst_desc: {
+    ru: "Концепции, клинические сценарии, ключевые способности, рекомендуемые книги. Подготовка к сессии и рефлексия после. Дневник аналитика и отслеживание профессионального роста. Как хороший супервизор — расширяет видение, помогает думать, возвращает к процессу.",
+    en: "Concepts, clinical scenarios, core capabilities, recommended books. Session preparation and post-session reflection. Analyst journal and professional growth tracking. Like a good supervisor — expands perspective, helps you think, brings you back to the process."
+  },
+  analyst_f1: { ru: "Концепции",       en: "Concepts" },
+  analyst_f2: { ru: "Сценарии",        en: "Scenarios" },
+  analyst_f3: { ru: "До/после сессии", en: "Pre/post session" },
+  analyst_f4: { ru: "Дневник",         en: "Journal" },
+
+  // ── Becoming CBT Therapist ────────────────────
+  cbt_badge:   { ru: "КПТ", en: "CBT" },
+  cbt_tagline: {
+    ru: "Среда профессионального становления для КПТ-терапевтов",
+    en: "Professional development environment for CBT therapists"
+  },
+  cbt_desc: {
+    ru: "30 концепций когнитивной модели, 80 клинических виньеток, 10 протоколов (депрессия, ГТР, ОКР, паника, ПТСР и другие), тренажёр когнитивных искажений. Инструменты: формулировка случая, запись мыслей, поведенческие эксперименты. Подготовка к сессии, дневник рефлексии, развитие компетенций.",
+    en: "30 cognitive model concepts, 80 clinical vignettes, 10 protocols (depression, GAD, OCD, panic, PTSD and more), distortion trainer. Tools: case formulation, thought record, behavioral experiments. Session prep, reflective journal, capability development."
+  },
+  cbt_f1: { ru: "80 виньеток",         en: "80 vignettes" },
+  cbt_f2: { ru: "10 протоколов",       en: "10 protocols" },
+  cbt_f3: { ru: "Формулировка случая", en: "Case Formulation" },
+  cbt_f4: { ru: "Тренажёр искажений",  en: "Distortion Trainer" },
+
+  // ── Becoming Gestaltist ───────────────────────
+  gestaltist_badge:   { ru: "Гештальт", en: "Gestalt" },
+  gestaltist_tagline: {
+    ru: "Среда профессионального становления для гештальт-терапевтов",
+    en: "Professional development environment for Gestalt therapists"
+  },
+  gestaltist_desc: {
+    ru: "22 концепции гештальта: граница контакта, цикл контакта, прерывания, парадоксальная теория изменений, диалог Я-Ты. 19 терапевтических сценариев с перспективами и вопросами супервизора. 10 направлений развития, 26 книг с резюме. Подготовка присутствия, дневник сессии.",
+    en: "22 Gestalt concepts: contact boundary, contact cycle, interruptions, paradoxical theory of change, I-Thou dialogue. 19 therapeutic scenarios with perspectives and supervisor questions. 10 capability guides, 26 books with summaries. Presence preparation, session journal."
+  },
+  gestaltist_f1: { ru: "22 концепции",  en: "22 concepts" },
+  gestaltist_f2: { ru: "19 сценариев",  en: "19 scenarios" },
+  gestaltist_f3: { ru: "26 книг",       en: "26 books" },
+  gestaltist_f4: { ru: "Дневник сессии", en: "Session Journal" },
+
+  // ── 2Reframe ──────────────────────────────────
+  reframe_badge:   { ru: "Мысли и убеждения", en: "Thoughts & Beliefs" },
+  reframe_tagline: { ru: "Превратите шум мыслей в ясность", en: "Turn mental noise into clarity" },
+  reframe_desc: {
+    ru: "Дневник когнитивной работы. Запишите мысль, исследуйте 14 когнитивных искажений (Бек, Бёрнс), проанализируйте доказательства «за» и «против», переосмыслите с помощью 8 структурированных упражнений. Идеален как домашнее задание в терапии.",
+    en: "Cognitive journal. Write down a thought, explore 14 cognitive distortions (Beck, Burns), analyze evidence for and against, reframe with 8 structured exercises. Ideal as therapy homework."
+  },
+  reframe_f1: { ru: "14 искажений", en: "14 distortions" },
+  reframe_f2: { ru: "8 упражнений", en: "8 exercises" },
+  reframe_f3: { ru: "Дневник",      en: "Journal" },
+  reframe_f4: { ru: "Статистика",   en: "Insights" },
+
+  // ── Learn to Feel ─────────────────────────────
+  feelit_name:    { ru: "Learn to Feel",             en: "Learn to Feel" },
+  feelit_badge:   { ru: "Эмоции и тело",             en: "Emotions & Body" },
+  feelit_tagline: { ru: "Распознавание эмоций через тело", en: "Recognise emotions through the body" },
+  feelit_desc: {
+    ru: "Чек-ин за 60 секунд: отметьте ощущения на силуэте тела, ответьте на уточняющие вопросы — получите гипотезы эмоций с объяснением. 8 микропрактик регуляции по 60–120 секунд. Автоматическая стабилизация при высокой интенсивности.",
+    en: "60-second check-in: mark sensations on a body silhouette, answer clarifying questions — get emotion hypotheses with explanation. 8 regulation micro-practices (60–120 sec). Automatic stabilisation at high intensity."
+  },
+  feelit_f1: { ru: "14 эмоций",    en: "14 emotions" },
+  feelit_f2: { ru: "8 практик",    en: "8 practices" },
+  feelit_f3: { ru: "Силуэт тела",  en: "Body silhouette" },
+  feelit_f4: { ru: "Стабилизация", en: "Stabilisation" },
+
+  // ── Couple Bridge ─────────────────────────────
+  couple_badge:   { ru: "Отношения", en: "Relationships" },
   couple_tagline: { ru: "Научный гид по отношениям", en: "Science-based relationship guide" },
   couple_desc: {
     ru: "40+ лет исследований Готтмана, Джонсон, Перель и Фишер в одном приложении. 7 стадий отношений, 10 кризисов с доказательными стратегиями, паттерны привязанности, 8 измерений отношений. Понимайте динамику, проходите кризисы, растите вместе.",
@@ -61,145 +147,108 @@ const T = {
   couple_f3: { ru: "Привязанность",      en: "Attachment" },
   couple_f4: { ru: "50+ ресурсов",       en: "50+ resources" },
 
-  // 2Reframe
-  reframe_badge:   { ru: "Для клиентов", en: "For Clients" },
-  reframe_tagline: { ru: "Превратите шум мыслей в ясность", en: "Turn mental noise into clarity" },
-  reframe_desc: {
-    ru: "Дневник когнитивной работы. Запишите мысль, исследуйте 14 когнитивных искажений (Бек, Бёрнс), проанализируйте доказательства «за» и «против», переосмыслите с помощью 8 структурированных упражнений. Идеален как домашнее задание в терапии.",
-    en: "Cognitive journal. Write down a thought, explore 14 cognitive distortions (Beck, Burns), analyze evidence for and against, reframe with 8 structured exercises. Perfect as therapy homework."
-  },
-  reframe_f1: { ru: "14 искажений",  en: "14 distortions" },
-  reframe_f2: { ru: "8 упражнений",  en: "8 exercises" },
-  reframe_f3: { ru: "Дневник",       en: "Journal" },
-  reframe_f4: { ru: "Статистика",    en: "Insights" },
-
-  // Learn to Feel
-  feelit_name:    { ru: "Learn to Feel", en: "Learn to Feel" },
-  feelit_badge:   { ru: "Для клиентов", en: "For Clients" },
-  feelit_tagline: { ru: "Распознавание эмоций через тело", en: "Recognize emotions through the body" },
-  feelit_desc: {
-    ru: "Чек-ин за 60 секунд: отметьте ощущения на силуэте тела, ответьте на уточняющие вопросы получите гипотезы эмоций с объяснением. 8 микропрактик регуляции по 60–120 секунд. Автоматическая стабилизация при высокой интенсивности.",
-    en: "60-second check-in: mark sensations on a body silhouette, answer clarifying questions get emotion hypotheses with explanation. 8 regulation micro-practices (60–120 sec). Automatic stabilization at high intensity."
-  },
-  feelit_f1: { ru: "14 эмоций",      en: "14 emotions" },
-  feelit_f2: { ru: "8 практик",      en: "8 practices" },
-  feelit_f3: { ru: "Силуэт тела",   en: "Body silhouette" },
-  feelit_f4: { ru: "Стабилизация",   en: "Stabilization" },
-
-  // Becoming Analyst
-  analyst_badge:   { ru: "Для аналитиков", en: "For Analysts" },
-  analyst_tagline: { ru: "Для начинающих психоаналитиков", en: "For beginning psychoanalysts" },
-  analyst_desc: {
-    ru: "Концепции, клинические сценарии, ключевые способности, рекомендуемые книги. Подготовка к сессии и рефлексия после. Дневник аналитика и отслеживание профессионального роста. Как хороший супервизор расширяет видение, помогает думать, возвращает к процессу.",
-    en: "Concepts, clinical scenarios, core capabilities, recommended books. Session preparation and post-session reflection. Analyst journal and growth tracking. Like a good supervisor expands perspective, helps think, brings you back to the process."
-  },
-  analyst_f1: { ru: "Концепции",       en: "Concepts" },
-  analyst_f2: { ru: "Сценарии",        en: "Scenarios" },
-  analyst_f3: { ru: "До/после сессии", en: "Pre/post session" },
-  analyst_f4: { ru: "Дневник",         en: "Journal" },
-
   cta_appstore: { ru: "App Store", en: "App Store" },
 
-  // Audience
-  audience_label: { ru: "Аудитория", en: "Audience" },
-  audience_title: { ru: "Для кого это создано", en: "Who It's For" },
+  // ── Audience ──────────────────────────────────
+  audience_label: { ru: "Аудитория",              en: "Audience" },
+  audience_title: { ru: "Для кого это создано",   en: "Who It's For" },
 
-  aud_student_t: { ru: "Студенты психологии", en: "Psychology Students" },
+  aud_student_t: { ru: "Студенты и начинающие", en: "Students & Beginners" },
   aud_student_d: {
-    ru: "PsyMap и Becoming Analyst помогут сориентироваться в литературе, подготовиться к первым клиентам и супервизии",
-    en: "PsyMap and Becoming Analyst help navigate literature, prepare for first clients and supervision"
+    ru: "PsyMap — навигатор с первого клиента. Becoming Analyst, CBT Therapist и Gestaltist помогут войти в профессию через концепции и клинические сценарии.",
+    en: "PsyMap is your navigator from the first client. Becoming Analyst, CBT Therapist and Gestaltist help you enter the profession through concepts and clinical scenarios."
   },
   aud_pract_t: { ru: "Практикующие психологи", en: "Practicing Psychologists" },
   aud_pract_d: {
-    ru: "Рекомендуйте 2Reframe и Learn to Feel клиентам как инструменты между сессиями. PsyMap ваш справочник на каждый день",
-    en: "Recommend 2Reframe and Learn to Feel to clients as between-session tools. PsyMap your everyday reference"
+    ru: "Инструменты для каждого направления: КПТ, гештальт, психоанализ. Рекомендуйте клиентам 2Reframe и Learn to Feel для работы между сессиями.",
+    en: "Tools for every modality: CBT, Gestalt, psychoanalysis. Recommend 2Reframe and Learn to Feel to clients for between-session work."
   },
   aud_analyst_t: { ru: "Аналитики и супервизоры", en: "Analysts & Supervisors" },
   aud_analyst_d: {
-    ru: "Becoming Analyst среда для углубления рефлексии, развития ключевых способностей и подготовки к сессиям",
-    en: "Becoming Analyst environment for deepening reflection, developing core capabilities and session preparation"
+    ru: "Becoming Analyst — среда рефлексии и роста. Полезно рекомендовать супервизируемым для самостоятельной работы между встречами.",
+    en: "Becoming Analyst — a space for reflection and growth. Useful to recommend to supervisees for independent work between sessions."
   },
   aud_client_t: { ru: "Клиенты и пары", en: "Clients & Couples" },
   aud_client_d: {
-    ru: "2Reframe для работы с мыслями, Learn to Feel для понимания эмоций, Couple Bridge для осмысления отношений",
-    en: "2Reframe for thought work, Learn to Feel for understanding emotions, Couple Bridge for relationship insight"
+    ru: "2Reframe — для работы с мыслями. Learn to Feel — для понимания эмоций через тело. Couple Bridge — для осмысления отношений.",
+    en: "2Reframe — for thought work. Learn to Feel — for understanding emotions through the body. Couple Bridge — for relationship insight."
   },
 
-  // Principles
-  princ_label: { ru: "Принципы",                    en: "Principles" },
-  princ_title: { ru: "Что объединяет все приложения", en: "What Unites All Apps" },
+  // ── Principles ────────────────────────────────
+  princ_label: { ru: "Принципы",                     en: "Principles" },
+  princ_title: { ru: "Что объединяет все приложения", en: "What All Apps Share" },
 
-  princ_1_t: { ru: "Доказательная база",  en: "Evidence-Based" },
+  princ_1_t: { ru: "Доказательная база",   en: "Evidence-Based" },
   princ_1_d: {
-    ru: "Контент основан на рецензируемых исследованиях и работах ведущих учёных. Никакой псевдонауки, никаких пустых обещаний.",
-    en: "Content based on peer-reviewed research and leading scientists' work. No pseudoscience, no empty promises."
+    ru: "Контент основан на рецензируемых исследованиях и работах ведущих учёных.",
+    en: "Content based on peer-reviewed research and leading scientists' work."
   },
-  princ_2_t: { ru: "Полная приватность",  en: "Complete Privacy" },
+  princ_2_t: { ru: "Полная приватность",   en: "Complete Privacy" },
   princ_2_d: {
-    ru: "Все данные хранятся только на устройстве. Без аккаунтов, без трекинга, без передачи третьим лицам. Ваши мысли только ваши.",
+    ru: "Все данные хранятся только на устройстве. Без аккаунтов, без трекинга, без передачи третьим лицам. Ваши мысли — только ваши.",
     en: "All data stored on device only. No accounts, no tracking, no third-party sharing. Your thoughts are yours alone."
   },
-  princ_3_t: { ru: "Работает офлайн",     en: "Works Offline" },
+  princ_3_t: { ru: "Работает офлайн",      en: "Works Offline" },
   princ_3_d: {
-    ru: "Весь контент встроен в приложения. Интернет не нужен работайте в самолёте, на даче, где угодно.",
-    en: "All content bundled in the apps. No internet needed work on a plane, at the cottage, anywhere."
+    ru: "Весь контент встроен в приложения. Интернет не нужен — работайте в самолёте, на даче, где угодно.",
+    en: "All content is bundled in the apps. No internet needed — work on a plane, at the cottage, anywhere."
   },
   princ_4_t: { ru: "Не заменяет специалиста", en: "Not a Replacement" },
   princ_4_d: {
-    ru: "Приложения инструменты для обучения и самопомощи, не замена терапии и супервизии. В случае кризиса всегда к специалисту.",
-    en: "These are learning and self-help tools, not replacements for therapy and supervision. In crisis always see a professional."
+    ru: "Приложения — инструменты для обучения и самопомощи, не замена терапии и супервизии. В случае кризиса — всегда к специалисту.",
+    en: "These are learning and self-help tools, not replacements for therapy and supervision. In a crisis — always contact a professional."
   },
 
-  // CTA
-  cta_title:  { ru: "Начните с того, что ближе",  en: "Start With What's Closest" },
+  // ── CTA ───────────────────────────────────────
+  cta_title: { ru: "Начните с того, что ближе", en: "Start With What's Closest" },
   cta_sub: {
     ru: "Выберите приложение, которое решает вашу задачу прямо сейчас.",
-    en: "Choose the app that solves your need right now."
+    en: "Choose the app that addresses your need right now."
   },
   cta_action: { ru: "К приложениям", en: "Go to Apps" },
 
-  // Disclaimer
+  // ── Disclaimer ────────────────────────────────
   disclaimer_text: {
     ru: "Все приложения являются образовательными и справочными инструментами. Они не являются медицинскими изделиями и не предназначены для диагностики, лечения или принятия клинических решений. В ситуациях кризиса или риска обращайтесь к квалифицированному специалисту.",
     en: "All apps are educational and reference tools. They are not medical devices and are not intended for diagnosis, treatment, or clinical decision-making. In crisis or risk situations, contact a qualified professional."
   },
 
-  // Footer
-  footer_apps_h:    { ru: "Приложения", en: "Apps" },
-  footer_links_h:   { ru: "Ссылки",     en: "Links" },
-  footer_contact_h: { ru: "Контакт",    en: "Contact" },
+  // ── Footer ────────────────────────────────────
+  footer_apps_h:    { ru: "Приложения",                          en: "Apps" },
+  footer_links_h:   { ru: "Ссылки",                             en: "Links" },
+  footer_contact_h: { ru: "Контакт",                            en: "Contact" },
   footer_desc:      { ru: "Приложения для психологов и их клиентов", en: "Apps for psychologists and their clients" },
   footer_copy:      { ru: "© 2026 Notemia apps. Все права защищены.", en: "© 2026 Notemia apps. All rights reserved." },
 
-  // Support page
-  support_title: { ru: "Поддержка Notemia apps", en: "Support Notemia apps" },
-  support_sub:   { ru: "Мы всегда готовы помочь", en: "We're here to help" },
-  support_email_t: { ru: "Написать нам", en: "Email Us" },
-  support_email_d: { ru: "Мы ответим в течение 24 часов", en: "We'll respond within 24 hours" },
-  support_email_btn: { ru: "Отправить письмо", en: "Send Email" },
-  support_faq_t:   { ru: "Частые вопросы", en: "FAQ" },
-  support_faq_d:   { ru: "Быстрые ответы на популярные вопросы", en: "Quick answers to common questions" },
-  support_bug_t:   { ru: "Сообщить об ошибке", en: "Report a Bug" },
-  support_bug_d:   { ru: "Укажите приложение, устройство и версию iOS/macOS", en: "Include the app name, device and iOS/macOS version" },
-  support_bug_btn: { ru: "Сообщить", en: "Report" },
+  // ── Support page ──────────────────────────────
+  support_title:     { ru: "Поддержка Notemia apps",            en: "Notemia apps Support" },
+  support_sub:       { ru: "Мы всегда готовы помочь",           en: "We're here to help" },
+  support_email_t:   { ru: "Написать нам",                      en: "Email Us" },
+  support_email_d:   { ru: "Мы ответим в течение 24 часов",     en: "We'll respond within 24 hours" },
+  support_email_btn: { ru: "Отправить письмо",                   en: "Send Email" },
+  support_faq_t:     { ru: "Частые вопросы",                    en: "FAQ" },
+  support_faq_d:     { ru: "Быстрые ответы на популярные вопросы", en: "Quick answers to common questions" },
+  support_bug_t:     { ru: "Сообщить об ошибке",                en: "Report a Bug" },
+  support_bug_d:     { ru: "Укажите приложение, устройство и версию iOS/macOS", en: "Include the app name, device and iOS/macOS version" },
+  support_bug_btn:   { ru: "Сообщить",                          en: "Report" },
 
   faq_q1: { ru: "Приложения работают без интернета?", en: "Do the apps work offline?" },
   faq_a1: { ru: "Да. Весь контент встроен в каждое приложение. Интернет после скачивания не нужен.", en: "Yes. All content is bundled in each app. No internet required after download." },
   faq_q2: { ru: "Нужен ли аккаунт?", en: "Do I need an account?" },
   faq_a2: { ru: "Нет. Все данные хранятся только на вашем устройстве. Регистрация не требуется.", en: "No. All data is stored on your device only. No registration required." },
   faq_q3: { ru: "Это замена терапии?", en: "Is this a replacement for therapy?" },
-  faq_a3: { ru: "Нет. Все приложения: образовательные инструменты. Они не заменяют терапию, супервизию или обращение к специалисту.", en: "No. All apps are educational tools. They do not replace therapy, supervision, or professional help." },
+  faq_a3: { ru: "Нет. Все приложения — образовательные инструменты. Они не заменяют терапию, супервизию или обращение к специалисту.", en: "No. All apps are educational tools. They do not replace therapy, supervision, or professional help." },
   faq_q4: { ru: "Как восстановить подписку?", en: "How do I restore my subscription?" },
   faq_a4: { ru: "Откройте Настройки → Подписка → Восстановить покупки. Используйте тот же Apple ID.", en: "Go to Settings → Subscription → Restore Purchases. Use the same Apple ID." },
   faq_q5: { ru: "Какие устройства поддерживаются?", en: "What devices are supported?" },
   faq_a5: { ru: "iPhone и iPad с iOS 17+. Некоторые приложения также доступны на macOS 14+.", en: "iPhone and iPad with iOS 17+. Some apps are also available on macOS 14+." },
 
-  // Privacy page
-  privacy_title: { ru: "Политика конфиденциальности Notemia apps", en: "Privacy Policy Notemia apps" },
-  privacy_sub:   { ru: "Последнее обновление: февраль 2026", en: "Last updated: February 2026" },
+  // ── Privacy page ──────────────────────────────
+  privacy_title: { ru: "Политика конфиденциальности Notemia apps", en: "Privacy Policy — Notemia apps" },
+  privacy_sub:   { ru: "Последнее обновление: февраль 2026",        en: "Last updated: February 2026" },
   priv_intro: {
-    ru: "Настоящая политика распространяется на все приложения Notemia apps: PsyMap, Couple Bridge, 2Reframe, Learn to Feel и Becoming Analyst.",
-    en: "This policy applies to all Notemia apps: PsyMap, Couple Bridge, 2Reframe, Learn to Feel, and Becoming Analyst."
+    ru: "Настоящая политика распространяется на все приложения Notemia apps: PsyMap, Couple Bridge, 2Reframe, Learn to Feel, Becoming Analyst, Becoming CBT Therapist и Becoming Gestaltist.",
+    en: "This policy applies to all Notemia apps: PsyMap, Couple Bridge, 2Reframe, Learn to Feel, Becoming Analyst, Becoming CBT Therapist and Becoming Gestaltist."
   },
   priv_1_t: { ru: "Ваши данные", en: "Your Data" },
   priv_1_d: {
@@ -208,13 +257,13 @@ const T = {
   },
   priv_2_t: { ru: "Подписки", en: "Subscriptions" },
   priv_2_d: {
-    ru: "При оформлении подписки оплата обрабатывается Apple через App Store. Мы не имеем доступа к вашим платёжным данным. Подробности в политике конфиденциальности Apple.",
+    ru: "При оформлении подписки оплата обрабатывается Apple через App Store. Мы не имеем доступа к вашим платёжным данным. Подробности — в политике конфиденциальности Apple.",
     en: "Subscription payments are processed by Apple through the App Store. We do not have access to your payment information. See Apple's privacy policy for details."
   },
   priv_3_t: { ru: "Аналитика Apple", en: "Apple Analytics" },
   priv_3_d: {
     ru: "Приложения распространяются через App Store. Стандартные сервисы Apple (отчёты о сбоях, аналитика App Store) могут собирать анонимизированные технические данные согласно политике Apple.",
-    en: "Apps are distributed through the App Store. Standard Apple services (crash reports, App Store analytics) may collect anonymized technical data as described in Apple's privacy policy."
+    en: "Apps are distributed through the App Store. Standard Apple services (crash reports, App Store analytics) may collect anonymised technical data as described in Apple's privacy policy."
   },
   priv_4_t: { ru: "Контакт", en: "Contact" },
   priv_4_d: {
@@ -223,7 +272,7 @@ const T = {
   }
 };
 
-// ── Language engine ──
+// ── Language engine ────────────────────────────
 const LANG_KEY = "notemia-lang";
 
 function getStoredLang() {
@@ -248,8 +297,8 @@ function applyTranslations() {
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
     if (T[key] && T[key][currentLang]) {
-      if (el.tagName === "TITLE" || el.tagName === "META") {
-        if (el.tagName === "TITLE") el.textContent = T[key][currentLang];
+      if (el.tagName === "TITLE") {
+        el.textContent = T[key][currentLang];
       } else {
         el.innerHTML = T[key][currentLang];
       }
@@ -263,7 +312,7 @@ function updateLangButtons() {
   });
 }
 
-// ── Scroll animations ──
+// ── Scroll animations ──────────────────────────
 function initAnimations() {
   const observer = new IntersectionObserver(
     entries => {
@@ -276,11 +325,10 @@ function initAnimations() {
     },
     { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
   );
-
   document.querySelectorAll(".anim-in").forEach(el => observer.observe(el));
 }
 
-// ── Nav scroll effect ──
+// ── Nav scroll effect ──────────────────────────
 function initNavScroll() {
   const nav = document.getElementById("nav");
   if (!nav) return;
@@ -296,22 +344,18 @@ function initNavScroll() {
   });
 }
 
-// ── Mobile menu ──
+// ── Mobile menu ───────────────────────────────
 function initBurger() {
   const burger = document.getElementById("burger");
   const links = document.getElementById("navLinks");
   if (!burger || !links) return;
-
-  burger.addEventListener("click", () => {
-    links.classList.toggle("open");
-  });
-
+  burger.addEventListener("click", () => links.classList.toggle("open"));
   links.querySelectorAll(".nav__link").forEach(link => {
     link.addEventListener("click", () => links.classList.remove("open"));
   });
 }
 
-// ── FAQ accordion ──
+// ── FAQ accordion ─────────────────────────────
 function initFAQ() {
   document.querySelectorAll(".faq-q").forEach(btn => {
     btn.addEventListener("click", () => {
@@ -323,7 +367,7 @@ function initFAQ() {
   });
 }
 
-// ── Smooth scroll for anchor links ──
+// ── Smooth scroll ─────────────────────────────
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener("click", e => {
@@ -336,7 +380,7 @@ function initSmoothScroll() {
   });
 }
 
-// ── Init ──
+// ── Init ──────────────────────────────────────
 document.addEventListener("DOMContentLoaded", () => {
   setLang(currentLang);
   initAnimations();
