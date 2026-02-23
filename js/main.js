@@ -45,7 +45,7 @@ const T = {
   // ── Group headers ─────────────────────────────
   group_pro_label:    { ru: "Для психологов",                    en: "For Psychologists" },
   group_pro_title:    { ru: "Профессиональный рост и рефлексия", en: "Professional Growth & Reflection" },
-  group_pro_count:    { ru: "4 приложения",                      en: "4 apps" },
+  group_pro_count:    { ru: "5 приложений",                      en: "5 apps" },
   group_clients_label: { ru: "Для клиентов",                     en: "For Clients" },
   group_clients_title: { ru: "Самопомощь между сессиями",        en: "Self-Help Between Sessions" },
   group_clients_count: { ru: "3 приложения",                     en: "3 apps" },
@@ -65,50 +65,69 @@ const T = {
   psymap_f3: { ru: "50+ книг",             en: "50+ books" },
   psymap_f4: { ru: "Офлайн",               en: "Offline" },
 
-  // ── Becoming Analyst ──────────────────────────
+  // ── Becoming Analyst / Психоанализ мастерская ──────────────────────────
+  analyst_name:    { ru: "Психоанализ мастерская", en: "Psychoanalysis Mastery" },
   analyst_badge:   { ru: "Психоанализ", en: "Psychoanalysis" },
   analyst_tagline: {
-    ru: "Среда профессионального становления для психоаналитиков",
-    en: "Professional development environment for psychoanalysts"
+    ru: "Навигатор по психоанализу. Структурированная база понятий, сценариев и практик для системного понимания метода.",
+    en: "Navigator for Psychoanalysis. Structured database of concepts, scenarios and practices for systemic understanding of the method."
   },
   analyst_desc: {
-    ru: "Концепции, клинические сценарии, ключевые способности, рекомендуемые книги. Подготовка к сессии и рефлексия после. Дневник аналитика и отслеживание профессионального роста. Как хороший супервизор — расширяет видение, помогает думать, возвращает к процессу.",
-    en: "Concepts, clinical scenarios, core capabilities, recommended books. Session preparation and post-session reflection. Analyst journal and professional growth tracking. Like a good supervisor — expands perspective, helps you think, brings you back to the process."
+    ru: "Учебно-справочный навигатор: концепции, клинические сценарии, ключевые способности, рекомендуемые книги. Подготовка к сессии и рефлексия после. Дневник аналитика. Не заменяет обучение, личную терапию и супервизию.",
+    en: "Educational reference navigator: concepts, clinical scenarios, core capabilities, recommended books. Session preparation and post-session reflection. Analyst journal. Does not replace training, personal therapy and supervision."
   },
   analyst_f1: { ru: "Концепции",       en: "Concepts" },
   analyst_f2: { ru: "Сценарии",        en: "Scenarios" },
   analyst_f3: { ru: "До/после сессии", en: "Pre/post session" },
   analyst_f4: { ru: "Дневник",         en: "Journal" },
 
-  // ── Becoming CBT Therapist ────────────────────
-  cbt_badge:   { ru: "КПТ", en: "CBT" },
+  // ── Becoming CBT / КПТ мастерская ────────────────────
+  cbt_name:     { ru: "КПТ мастерская", en: "CBT Mastery" },
+  cbt_badge:    { ru: "КПТ", en: "CBT" },
   cbt_tagline: {
-    ru: "Среда профессионального становления для КПТ-терапевтов",
-    en: "Professional development environment for CBT therapists"
+    ru: "Навигатор по КПТ. Структурированная база понятий, сценариев и практик для системного понимания метода.",
+    en: "Navigator for CBT. Structured database of concepts, scenarios and practices for systemic understanding of the method."
   },
   cbt_desc: {
-    ru: "30 концепций когнитивной модели, 80 клинических виньеток, 10 протоколов (депрессия, ГТР, ОКР, паника, ПТСР и другие), тренажёр когнитивных искажений. Инструменты: формулировка случая, запись мыслей, поведенческие эксперименты. Подготовка к сессии, дневник рефлексии, развитие компетенций.",
-    en: "30 cognitive model concepts, 80 clinical vignettes, 10 protocols (depression, GAD, OCD, panic, PTSD and more), distortion trainer. Tools: case formulation, thought record, behavioral experiments. Session prep, reflective journal, capability development."
+    ru: "Учебно-справочный навигатор: 30 концепций когнитивной модели, 80 клинических виньеток, 10 протоколов, тренажёр искажений. Формулировка случая, запись мыслей, поведенческие эксперименты. Не заменяет обучение, личную терапию и супервизию.",
+    en: "Educational reference navigator: 30 cognitive model concepts, 80 clinical vignettes, 10 protocols, distortion trainer. Case formulation, thought record, behavioral experiments. Does not replace training, personal therapy and supervision."
   },
   cbt_f1: { ru: "80 виньеток",         en: "80 vignettes" },
   cbt_f2: { ru: "10 протоколов",       en: "10 protocols" },
   cbt_f3: { ru: "Формулировка случая", en: "Case Formulation" },
   cbt_f4: { ru: "Тренажёр искажений",  en: "Distortion Trainer" },
 
-  // ── Becoming Gestaltist ───────────────────────
+  // ── Becoming Gestaltist / Гештальт мастерская ───────────────────────
+  gestaltist_name:    { ru: "Гештальт мастерская", en: "Gestalt Mastery" },
   gestaltist_badge:   { ru: "Гештальт", en: "Gestalt" },
   gestaltist_tagline: {
-    ru: "Среда профессионального становления для гештальт-терапевтов",
-    en: "Professional development environment for Gestalt therapists"
+    ru: "Навигатор по гештальт-терапии. Структурированная база понятий, сценариев и практик для системного понимания метода.",
+    en: "Navigator for Gestalt therapy. Structured database of concepts, scenarios and practices for systemic understanding of the method."
   },
   gestaltist_desc: {
-    ru: "22 концепции гештальта: граница контакта, цикл контакта, прерывания, парадоксальная теория изменений, диалог Я-Ты. 19 терапевтических сценариев с перспективами и вопросами супервизора. 10 направлений развития, 26 книг с резюме. Подготовка присутствия, дневник сессии.",
-    en: "22 Gestalt concepts: contact boundary, contact cycle, interruptions, paradoxical theory of change, I-Thou dialogue. 19 therapeutic scenarios with perspectives and supervisor questions. 10 capability guides, 26 books with summaries. Presence preparation, session journal."
+    ru: "Учебно-справочный навигатор: 22 концепции (граница контакта, цикл контакта, прерывания, диалог Я-Ты), 19 сценариев, 26 книг. Подготовка присутствия, дневник сессии. Не заменяет обучение, личную терапию и супервизию.",
+    en: "Educational reference navigator: 22 concepts (contact boundary, contact cycle, interruptions, I-Thou dialogue), 19 scenarios, 26 books. Presence preparation, session journal. Does not replace training, personal therapy and supervision."
   },
   gestaltist_f1: { ru: "22 концепции",  en: "22 concepts" },
   gestaltist_f2: { ru: "19 сценариев",  en: "19 scenarios" },
   gestaltist_f3: { ru: "26 книг",       en: "26 books" },
   gestaltist_f4: { ru: "Дневник сессии", en: "Session Journal" },
+
+  // ── ТА мастерская / TA Mastery ───────────────────────
+  ta_name:     { ru: "ТА мастерская", en: "TA Mastery" },
+  ta_badge:    { ru: "Транзакционный анализ", en: "Transactional Analysis" },
+  ta_tagline: {
+    ru: "Навигатор по транзакционному анализу. Структурированная база понятий, сценариев и практик для системного понимания метода.",
+    en: "Navigator for Transactional Analysis. Structured database of concepts, scenarios and practices for systemic understanding of the method."
+  },
+  ta_desc: {
+    ru: "Учебно-справочный навигатор: концепции ТА, сценарии, способности, рекомендуемые книги. Подготовка к сессии и рефлексия. Не заменяет обучение, личную терапию и супервизию.",
+    en: "Educational reference navigator: TA concepts, scenarios, capabilities, recommended books. Session preparation and reflection. Does not replace training, personal therapy and supervision."
+  },
+  ta_f1: { ru: "Концепции ТА", en: "TA Concepts" },
+  ta_f2: { ru: "Сценарии",     en: "Scenarios" },
+  ta_f3: { ru: "Способности",  en: "Capabilities" },
+  ta_f4: { ru: "Книги",        en: "Books" },
 
   // ── 2Reframe ──────────────────────────────────
   reframe_badge:   { ru: "Мысли и убеждения", en: "Thoughts & Beliefs" },
@@ -155,18 +174,18 @@ const T = {
 
   aud_student_t: { ru: "Студенты и начинающие", en: "Students & Beginners" },
   aud_student_d: {
-    ru: "PsyMap — навигатор с первого клиента. Becoming Analyst, CBT Therapist и Gestaltist помогут войти в профессию через концепции и клинические сценарии.",
-    en: "PsyMap is your navigator from the first client. Becoming Analyst, CBT Therapist and Gestaltist help you enter the profession through concepts and clinical scenarios."
+    ru: "PsyMap — навигатор с первого клиента. Гештальт мастерская, КПТ мастерская, ТА мастерская и Психоанализ мастерская помогут войти в профессию через концепции и клинические сценарии.",
+    en: "PsyMap is your navigator from the first client. Gestalt Mastery, CBT Mastery, TA Mastery and Psychoanalysis Mastery help you enter the profession through concepts and clinical scenarios."
   },
   aud_pract_t: { ru: "Практикующие психологи", en: "Practicing Psychologists" },
   aud_pract_d: {
-    ru: "Инструменты для каждого направления: КПТ, гештальт, психоанализ. Рекомендуйте клиентам 2Reframe и Learn to Feel для работы между сессиями.",
-    en: "Tools for every modality: CBT, Gestalt, psychoanalysis. Recommend 2Reframe and Learn to Feel to clients for between-session work."
+    ru: "Инструменты для каждого направления: КПТ, гештальт, психоанализ, транзакционный анализ. Рекомендуйте клиентам 2Reframe и Learn to Feel для работы между сессиями.",
+    en: "Tools for every modality: CBT, Gestalt, psychoanalysis, transactional analysis. Recommend 2Reframe and Learn to Feel to clients for between-session work."
   },
   aud_analyst_t: { ru: "Аналитики и супервизоры", en: "Analysts & Supervisors" },
   aud_analyst_d: {
-    ru: "Becoming Analyst — среда рефлексии и роста. Полезно рекомендовать супервизируемым для самостоятельной работы между встречами.",
-    en: "Becoming Analyst — a space for reflection and growth. Useful to recommend to supervisees for independent work between sessions."
+    ru: "Психоанализ мастерская — навигатор для рефлексии и роста. Полезно рекомендовать супервизируемым для самостоятельной работы между встречами.",
+    en: "Psychoanalysis Mastery — a navigator for reflection and growth. Useful to recommend to supervisees for independent work between sessions."
   },
   aud_client_t: { ru: "Клиенты и пары", en: "Clients & Couples" },
   aud_client_d: {
@@ -224,7 +243,7 @@ const T = {
   support_title:     { ru: "Поддержка Notemia apps",            en: "Notemia apps Support" },
   support_sub:       { ru: "Мы всегда готовы помочь",           en: "We're here to help" },
   support_email_t:   { ru: "Написать нам",                      en: "Email Us" },
-  support_email_d:   { ru: "Мы ответим в течение 24 часов",     en: "We'll respond within 24 hours" },
+  support_email_d:   { ru: "Мы ответим в течение 48 часов",     en: "We'll respond within 48 hours" },
   support_email_btn: { ru: "Отправить письмо",                   en: "Send Email" },
   support_faq_t:     { ru: "Частые вопросы",                    en: "FAQ" },
   support_faq_d:     { ru: "Быстрые ответы на популярные вопросы", en: "Quick answers to common questions" },
@@ -245,8 +264,8 @@ const T = {
   privacy_title: { ru: "Политика конфиденциальности Notemia apps", en: "Privacy Policy — Notemia apps" },
   privacy_sub:   { ru: "Последнее обновление: февраль 2026",        en: "Last updated: February 2026" },
   priv_intro: {
-    ru: "Настоящая политика распространяется на все приложения Notemia apps: PsyMap, Couple Bridge, 2Reframe, Learn to Feel, Becoming Analyst, Becoming CBT Therapist и Becoming Gestaltist.",
-    en: "This policy applies to all Notemia apps: PsyMap, Couple Bridge, 2Reframe, Learn to Feel, Becoming Analyst, Becoming CBT Therapist and Becoming Gestaltist."
+    ru: "Настоящая политика распространяется на все приложения Notemia apps: PsyMap, Couple Bridge, 2Reframe, Learn to Feel, Гештальт мастерская, КПТ мастерская, ТА мастерская и Психоанализ мастерская.",
+    en: "This policy applies to all Notemia apps: PsyMap, Couple Bridge, 2Reframe, Learn to Feel, Gestalt Mastery, CBT Mastery, TA Mastery and Psychoanalysis Mastery."
   },
   priv_1_t: { ru: "Ваши данные", en: "Your Data" },
   priv_1_d: {

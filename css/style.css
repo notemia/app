@@ -28,6 +28,7 @@
   --analyst: #00b894;
   --cbt: #1E3A5F;
   --gestaltist: #2D5A3D;
+  --ta: #8B4513;
 
   --radius: 20px;
   --radius-sm: 12px;
@@ -600,8 +601,9 @@ ul, ol { list-style: none; }
 [data-accent="reframe"] .app-card__name { color: var(--reframe); }
 [data-accent="feelit"] .app-card__name { color: var(--feelit); }
 [data-accent="analyst"] .app-card__name { color: var(--analyst); }
-[data-accent="cbt"] .app-card__name { color: var(--cbt); }
-[data-accent="gestaltist"] .app-card__name { color: var(--gestaltist); }
+  [data-accent="cbt"] .app-card__name { color: var(--cbt); }
+  [data-accent="gestaltist"] .app-card__name { color: var(--gestaltist); }
+  [data-accent="ta"] .app-card__name { color: var(--ta); }
 
 .app-card__tagline {
   font-size: 1.05rem;
