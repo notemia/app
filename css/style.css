@@ -404,6 +404,7 @@ ul, ol { list-style: none; }
 .btn--analyst { background: linear-gradient(135deg, var(--analyst), #55efc4); }
 .btn--cbt { background: linear-gradient(135deg, var(--cbt), #2d5a8e); }
 .btn--gestaltist { background: linear-gradient(135deg, var(--gestaltist), #4a8c6a); }
+.btn--ta { background: linear-gradient(135deg, var(--ta), #a0522d); }
 
 .btn--app:hover { transform: translateY(-2px); filter: brightness(1.08); }
 
