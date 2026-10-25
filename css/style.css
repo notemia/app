@@ -1066,3 +1066,19 @@ ul, ol { list-style: none; }
   .hero__stats { gap: 24px; }
   .hero__stat strong { font-size: 1.5rem; }
 }
+
+
+/* ═══ My Uphill (Physical Health group) ═══ */
+:root { --myuphill: #1f8a5b; }
+.apps-group-icon--health { background: linear-gradient(135deg, #1f8a5b, #4fbf8e); }
+.btn--myuphill { background: linear-gradient(135deg, #1f8a5b, #4fbf8e); }
+[data-accent="myuphill"] .app-card__name { color: var(--myuphill); }
+.app-card__links { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 14px; font-size: 0.9rem; }
+.app-card__links a { color: var(--text-secondary); text-decoration: underline; text-underline-offset: 3px; }
+.app-card__links a:hover { color: var(--myuphill); }
+
+/* My Uphill pages: RU/EN blocks follow the site's language switch */
+html[lang="ru"] .t-en { display: none; }
+html[lang="en"] .t-ru { display: none; }
+.mu-summary { background: var(--bg-section); border-radius: var(--radius-sm); padding: 16px 20px; margin: 14px 0; color: var(--text-secondary); line-height: 1.65; }
+.mu-summary strong { display: block; margin-bottom: 6px; color: var(--text-primary); }

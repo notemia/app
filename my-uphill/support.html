@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support | Поддержка</title>
+  <meta name="description" content="My Uphill support and frequently asked questions.">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="nav nav--scrolled" id="nav">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__brand">
+      <span class="nav__logo">N</span>
+      <span class="nav__name">Notemia apps</span>
+    </a>
+    <div class="nav__links" id="navLinks">
+      <a href="../index.html#apps" class="nav__link" data-i18n="nav_apps">Приложения</a>
+      <a href="../support.html" class="nav__link" data-i18n="nav_support">Поддержка</a>
+      <a href="../privacy.html" class="nav__link" data-i18n="nav_privacy">Приватность</a>
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<section class="page-section">
+  <div class="container" style="max-width: 800px;">
+    <h1><span class="t-ru">My Uphill: поддержка</span><span class="t-en">My Uphill: Support</span></h1>
+    <p class="page-sub"><span class="t-ru">Мы ответим в течение 48 часов</span><span class="t-en">We reply within 48 hours</span></p>
+
+    <div class="support-grid">
+      <div class="support-card">
+        <div class="support-card__icon">&#9993;</div>
+        <h3><span class="t-ru">Написать нам</span><span class="t-en">Contact us</span></h3>
+        <p><span class="t-ru">Вопросы, ошибки, предложения</span><span class="t-en">Questions, bugs, feedback</span></p>
+        <a href="mailto:helpyoutofeel@gmail.com?subject=My%20Uphill" class="btn btn--primary"><span class="t-ru">Отправить письмо</span><span class="t-en">Send email</span></a>
+      </div>
+      <div class="support-card">
+        <div class="support-card__icon">&#128027;</div>
+        <h3><span class="t-ru">Сообщить об ошибке</span><span class="t-en">Report a bug</span></h3>
+        <p><span class="t-ru">Укажите модель iPhone и версию iOS</span><span class="t-en">Include your iPhone model and iOS version</span></p>
+        <a href="mailto:helpyoutofeel@gmail.com?subject=My%20Uphill%20bug%20report" class="btn btn--outline"><span class="t-ru">Сообщить</span><span class="t-en">Report</span></a>
+      </div>
+    </div>
+
+    <div id="faq">
+      <h2><span class="t-ru">Частые вопросы</span><span class="t-en">Frequently asked questions</span></h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q"><span class="t-ru">Как работает бесплатный период?</span><span class="t-en">How does the free trial work?</span></button>
+          <div class="faq-a"><div class="faq-a__inner"><span class="t-ru">Все функции бесплатны 7 дней с первого запуска. Затем одна разовая покупка «Full Access» открывает приложение навсегда — подписки нет. Сохранённые данные и экспорт остаются доступны в любом случае.</span><span class="t-en">Every feature is free for 7 days from your first launch. After that, a single one-time purchase (&ldquo;Full Access&rdquo;) unlocks the app permanently &mdash; there is no subscription. Your saved data and export stay available either way.</span></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span class="t-ru">Как восстановить покупку?</span><span class="t-en">How do I restore my purchase?</span></button>
+          <div class="faq-a"><div class="faq-a__inner"><span class="t-ru">Откройте вкладку «Профиль» и нажмите «Восстановить», используя тот же Apple ID, с которым совершали покупку.</span><span class="t-en">Open the Profile tab and tap Restore, using the same Apple ID you bought with.</span></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span class="t-ru">Почему некоторые значения — «оценка» или «Нет данных»?</span><span class="t-en">Why are some values &ldquo;estimated&rdquo; or &ldquo;No data&rdquo;?</span></button>
+          <div class="faq-a"><div class="faq-a__inner"><span class="t-ru">Приложение не придумывает числа. Шаги, этажи и высота берутся из датчиков iPhone; если датчика нет или разрешение отключено, значение помечается как оценка или показывается как отсутствующее. Калории — расчётная оценка по MET, а не лабораторное измерение.</span><span class="t-en">The app never invents numbers. Steps, floors and altitude come from your iPhone's motion sensors; if a sensor is unavailable or the permission is off, the value is marked estimated or shown as missing. Calories are MET-based estimates, not laboratory measurements.</span></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span class="t-ru">Можно ли сменить язык и единицы измерения?</span><span class="t-en">Can I change the language or units?</span></button>
+          <div class="faq-a"><div class="faq-a__inner"><span class="t-ru">Да: «Профиль» → «Язык» (9 языков, применяется сразу, работает офлайн) и «Профиль» → «Единицы» (метрические / имперские).</span><span class="t-en">Yes &mdash; Profile &rarr; Language (9 languages, applied instantly, works offline) and Profile &rarr; Units (metric / imperial).</span></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span class="t-ru">Как экспортировать или удалить данные?</span><span class="t-en">How do I export or delete my data?</span></button>
+          <div class="faq-a"><div class="faq-a__inner"><span class="t-ru">«Профиль» → «Экспорт (CSV и JSON)». Отдельные подъёмы удаляются в «Истории»; удаление приложения стирает всё.</span><span class="t-en">Profile &rarr; Export (CSV &amp; JSON). Delete individual walks in History, or delete the app to remove everything.</span></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span class="t-ru">Какие устройства поддерживаются?</span><span class="t-en">Which devices are supported?</span></button>
+          <div class="faq-a"><div class="faq-a__inner"><span class="t-ru">iPhone с iOS 17 и новее.</span><span class="t-en">iPhone with iOS 17 or later.</span></div></div>
+        </div>
+      </div>
+    </div>
+    <p class="page-sub" style="margin-top:32px;"><span class="t-ru">My Uphill — не медицинское изделие и не ставит диагнозов.</span><span class="t-en">My Uphill is not a medical device and does not diagnose.</span></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo">N</span>
+        <span class="nav__name">Notemia apps</span>
+        <p class="footer__desc" data-i18n="footer_desc">Приложения для психологов и их клиентов</p>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer_apps_h">Приложения</h4>
+        <a href="../index.html#my-uphill">My Uphill</a>
+        <a href="../index.html#apps">Все приложения</a>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer_links_h">Ссылки</h4>
+        <a href="support.html" data-i18n="nav_support">Поддержка</a>
+        <a href="privacy.html" data-i18n="nav_privacy">Приватность</a>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer_contact_h">Контакт</h4>
+        <a href="mailto:helpyoutofeel@gmail.com">helpyoutofeel@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span data-i18n="footer_copy">&copy; 2026 Notemia apps. Все права защищены.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -50,6 +50,22 @@ const T = {
   group_clients_label: { ru: "Для клиентов",                     en: "For Clients" },
   group_clients_title: { ru: "Самопомощь между сессиями",        en: "Self-Help Between Sessions" },
   group_clients_count: { ru: "3 приложения",                     en: "3 apps" },
+  group_health_label:  { ru: "Физическое здоровье",              en: "Physical Health" },
+  group_health_title:  { ru: "Движение и выносливость",          en: "Movement &amp; Endurance" },
+  group_health_count:  { ru: "1 приложение",                     en: "1 app" },
+
+  // ── My Uphill ─────────────────────────────────
+  myuphill_badge:   { ru: "Ходьба в гору", en: "Uphill Walking" },
+  myuphill_tagline: { ru: "Ваша горка. Ваше здоровье. Ваш прогресс.", en: "Your hill. Your health. Your progress." },
+  myuphill_desc: {
+    ru: "Превращает обычный подъём в гору в измеримую кардиотренировку: время, шаги, этажи, вертикальная скорость, субъективная нагрузка (RPE) и разговорный тест, оценка калорий и недельные минуты аэробной активности. Прогресс на каждой из 1–3 знакомых трасс, без часов, аккаунта и интернета. 7 дней бесплатно, затем разовая покупка без подписки. Не медицинский прибор.",
+    en: "Turns an ordinary uphill walk into a measurable cardio workout: time, steps, floors, vertical speed, perceived effort (RPE) and the talk test, estimated calories and weekly aerobic minutes. Track progress on each of 1–3 familiar routes, with no watch, account or internet. 7 days free, then a one-time purchase, no subscription. Not a medical device."
+  },
+  myuphill_f1: { ru: "1–3 маршрута",          en: "1–3 routes" },
+  myuphill_f2: { ru: "Вертикальная скорость", en: "Vertical speed" },
+  myuphill_f3: { ru: "Журнал веса",           en: "Weight log" },
+  myuphill_f4: { ru: "9 языков",              en: "9 languages" },
+  tag_soon:    { ru: "скоро в App Store",     en: "coming soon to the App Store" },
 
   // ── PsyMap ────────────────────────────────────
   psymap_badge:   { ru: "Для специалистов", en: "For Professionals" },
@@ -265,8 +281,8 @@ const T = {
   privacy_title: { ru: "Политика конфиденциальности Notemia apps", en: "Privacy Policy — Notemia apps" },
   privacy_sub:   { ru: "Последнее обновление: февраль 2026",        en: "Last updated: February 2026" },
   priv_intro: {
-    ru: "Настоящая политика распространяется на все приложения Notemia apps: PsyMap, Couple Bridge, 2Reframe, Learn to Feel, Гештальт мастерская, КПТ мастерская, ТА мастерская и Психоанализ мастерская.",
-    en: "This policy applies to all Notemia apps: PsyMap, Couple Bridge, 2Reframe, Learn to Feel, Gestalt Mastery, CBT Mastery, TA Mastery and Psychoanalysis Mastery."
+    ru: "Настоящая политика распространяется на все приложения Notemia apps: PsyMap, Couple Bridge, 2Reframe, Learn to Feel, Гештальт мастерская, КПТ мастерская, ТА мастерская и Психоанализ мастерская. Приложение <a href='my-uphill/privacy.html'>My Uphill</a> имеет отдельную политику конфиденциальности (данные движения, разовая покупка вместо подписки).",
+    en: "This policy applies to all Notemia apps: PsyMap, Couple Bridge, 2Reframe, Learn to Feel, Gestalt Mastery, CBT Mastery, TA Mastery and Psychoanalysis Mastery. <a href='my-uphill/privacy.html'>My Uphill</a> has its own privacy policy (motion data, one-time purchase instead of a subscription)."
   },
   priv_1_t: { ru: "Ваши данные", en: "Your Data" },
   priv_1_d: {
