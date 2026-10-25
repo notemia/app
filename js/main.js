@@ -55,12 +55,13 @@ const T = {
   group_health_count:  { ru: "1 приложение",                     en: "1 app" },
 
   // ── My Uphill ─────────────────────────────────
-  myuphill_badge:   { ru: "Ходьба в гору", en: "Uphill Walking" },
-  myuphill_tagline: { ru: "Ваша горка. Ваше здоровье. Ваш прогресс.", en: "Your hill. Your health. Your progress." },
+  myuphill_badge:   { ru: "Горные прогулки", en: "Mountain Walks" },
+  myuphill_tagline: { ru: "Для тех, кто любит горы и ходит в них ради здоровья и хорошей формы", en: "For people who love the mountains and walk them for their health and fitness" },
   myuphill_desc: {
-    ru: "Превращает обычный подъём в гору в измеримую кардиотренировку: время, шаги, этажи, вертикальная скорость, субъективная нагрузка (RPE) и разговорный тест, оценка калорий и недельные минуты аэробной активности. Прогресс на каждой из 1–3 знакомых трасс, без часов, аккаунта и интернета. 7 дней бесплатно, затем разовая покупка без подписки. Не медицинский прибор.",
-    en: "Turns an ordinary uphill walk into a measurable cardio workout: time, steps, floors, vertical speed, perceived effort (RPE) and the talk test, estimated calories and weekly aerobic minutes. Track progress on each of 1–3 familiar routes, with no watch, account or internet. 7 days free, then a one-time purchase, no subscription. Not a medical device."
+    ru: "Приложение превращает привычные маршруты в способ следить за своей физической формой: сравнивайте подъёмы и оценивайте прогресс. Насколько эффективной была нагрузка? Как меняются кардиоформа и выносливость? Как эти тренировки помогают сохранять здоровье и активность с возрастом? Понятная аналитика на iPhone: без умных часов, интернета, регистрации и сложных настроек. 7 дней бесплатно, затем разовая покупка без подписки.",
+    en: "The app turns your familiar routes into a way to keep track of your fitness: compare your climbs and see how you are progressing. How demanding was the effort? How are your cardio fitness and endurance changing? How do these walks help you stay healthy and active as the years go by? Clear analytics on your iPhone: no smartwatch, no internet, no sign-up, no complicated settings. 7 days free, then a one-time purchase, no subscription."
   },
+
   myuphill_f1: { ru: "1–3 маршрута",          en: "1–3 routes" },
   myuphill_f2: { ru: "Вертикальная скорость", en: "Vertical speed" },
   myuphill_f3: { ru: "Журнал веса",           en: "Weight log" },
