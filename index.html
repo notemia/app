@@ -62,7 +62,7 @@
     </div>
     <div class="hero__stats anim-in">
       <div class="hero__stat">
-        <strong>9</strong>
+        <strong>10</strong>
         <span data-i18n="stat_apps">приложений</span>
       </div>
       <div class="hero__stat">
@@ -77,8 +77,15 @@
 <section class="apps" id="apps">
   <div class="container">
     <div class="section-header anim-in">
-      <h2 class="section-title" data-i18n="apps_title">Приложения для практики и роста</h2>
-      <p class="section-sub" data-i18n="apps_sub">Инструменты для психологов разных направлений и для их клиентов. От первой сессии до глубокой рефлексии.</p>
+      <h2 class="section-title" data-i18n="apps_title">Приложения для ума и тела</h2>
+      <p class="section-sub" data-i18n="apps_sub">Два направления: инструменты для психологов и их клиентов — и приложения для спорта и физического здоровья.</p>
+    </div>
+
+    <!-- ══════ DOMAIN: PSYCHOLOGY ══════ -->
+    <div class="apps-domain anim-in">
+      <span class="apps-domain__kicker" data-i18n="domain_k">Направление</span>
+      <h3 class="apps-domain__title" data-i18n="domain_psych">Психология</h3>
+      <p class="apps-domain__sub" data-i18n="domain_psych_sub">Для психологов и их клиентов</p>
     </div>
 
     <!-- ══════ GROUP: FOR PROFESSIONALS ══════ -->
@@ -311,20 +318,40 @@
       </article>
     </div>
 
-    <!-- ══════ GROUP: PHYSICAL HEALTH ══════ -->
+    <!-- ══════ DOMAIN: SPORT & PHYSICAL HEALTH ══════ -->
+    <div class="apps-domain anim-in">
+      <span class="apps-domain__kicker" data-i18n="domain_k">Направление</span>
+      <h3 class="apps-domain__title" data-i18n="domain_sport">Спорт и физическое здоровье</h3>
+      <p class="apps-domain__sub" data-i18n="domain_sport_sub">Падел, ходьба, движение и форма</p>
+    </div>
+
     <div class="apps-group anim-in">
-      <div class="apps-group-header">
-        <div class="apps-group-icon apps-group-icon--health">
-          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-          </svg>
+
+      <!-- Padl -->
+      <article class="app-card anim-in" id="padl" data-accent="padl">
+        <div class="app-card__visual">
+          <div class="app-card__icon">
+            <img src="img/padl.png" alt="Padl" class="app-card__logo" width="120" height="120">
+          </div>
+          <div class="app-card__badge" data-i18n="padl_badge">Падел-теннис</div>
         </div>
-        <div class="apps-group-text">
-          <div class="apps-group-label" data-i18n="group_health_label">Физическое здоровье</div>
-          <div class="apps-group-title" data-i18n="group_health_title">Движение и выносливость</div>
+        <div class="app-card__body">
+          <h3 class="app-card__name" data-accent="padl">Padl</h3>
+          <p class="app-card__tagline" data-i18n="padl_tagline">Падел с нуля: правила, счёт и техника</p>
+          <p class="app-card__desc" data-i18n="padl_desc">Самый простой способ разобраться в падел до первой игры и удобный помощник на корте. 9 уроков для новичка, умный счёт по правилам падел, разбор ударов, тактика углов и турниры Americana/Mexicano. Полностью офлайн, без аккаунта. Русский, English, Español.</p>
+          <div class="app-card__features">
+            <span class="chip" data-i18n="padl_f1">9 уроков новичку</span>
+            <span class="chip" data-i18n="padl_f2">Умный счёт</span>
+            <span class="chip" data-i18n="padl_f3">Удары и тактика</span>
+            <span class="chip" data-i18n="padl_f4">Турниры</span>
+          </div>
+          <span class="tag-filled" data-i18n="tag_soon">скоро в App Store</span>
+          <div class="app-card__links">
+            <a href="padl/privacy.html" data-i18n="nav_privacy">Приватность</a>
+            <a href="padl/support.html" data-i18n="nav_support">Поддержка</a>
+          </div>
         </div>
-        <span class="apps-group-count" data-i18n="group_health_count">1 приложение</span>
-      </div>
+      </article>
 
       <!-- My Uphill -->
       <article class="app-card anim-in" id="my-uphill" data-accent="myuphill">
@@ -470,6 +497,7 @@
         <a href="#apps">2Reframe</a>
         <a href="#apps" data-i18n="feelit_name">Learn to Feel</a>
         <a href="#my-uphill">My Uphill</a>
+        <a href="#padl">Padl</a>
       </div>
       <div class="footer__col">
         <h4 data-i18n="footer_links_h">Ссылки</h4>

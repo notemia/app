@@ -35,13 +35,32 @@ const T = {
 
   // ── Apps section ──────────────────────────────
   apps_title: {
-    ru: "Приложения для практики и роста",
-    en: "Apps for Practice & Growth"
+    ru: "Приложения для ума и тела",
+    en: "Apps for Mind & Body"
   },
   apps_sub: {
-    ru: "Инструменты для психологов разных направлений и для их клиентов. От первой сессии до глубокой рефлексии.",
-    en: "Tools for therapists across modalities and for their clients. From the first session to deep reflection."
+    ru: "Два направления: инструменты для психологов и их клиентов — и приложения для спорта и физического здоровья.",
+    en: "Two domains: tools for psychologists and their clients — and apps for sport and physical health."
   },
+
+  // ── Domain dividers ───────────────────────────
+  domain_k:          { ru: "Направление",                    en: "Domain" },
+  domain_psych:      { ru: "Психология",                     en: "Psychology" },
+  domain_psych_sub:  { ru: "Для психологов и их клиентов",    en: "For psychologists and their clients" },
+  domain_sport:      { ru: "Спорт и физическое здоровье",     en: "Sport &amp; physical health" },
+  domain_sport_sub:  { ru: "Падел, ходьба, движение и форма", en: "Padel, walking, movement and fitness" },
+
+  // ── Padl ──────────────────────────────────────
+  padl_badge:   { ru: "Падел-теннис", en: "Padel" },
+  padl_tagline: { ru: "Падел с нуля: правила, счёт и техника", en: "Padel from scratch: rules, scoring and technique" },
+  padl_desc: {
+    ru: "Самый простой способ разобраться в падел до первой игры и удобный помощник на корте. 9 уроков для новичка, умный счёт по правилам падел, разбор ударов, тактика углов и турниры Americana/Mexicano. Полностью офлайн, без аккаунта. Русский, English, Español.",
+    en: "The easiest way to understand padel before your first match — and a handy on-court tool. 9 beginner lessons, a real padel scoreboard, a shot library, angle tactics and Americana/Mexicano tournaments. Fully offline, no account. English, Russian, Spanish."
+  },
+  padl_f1: { ru: "9 уроков новичку", en: "9 beginner lessons" },
+  padl_f2: { ru: "Умный счёт",       en: "Smart scoreboard" },
+  padl_f3: { ru: "Удары и тактика",  en: "Shots &amp; tactics" },
+  padl_f4: { ru: "Турниры",          en: "Tournaments" },
 
   // ── Group headers ─────────────────────────────
   group_pro_label:    { ru: "Для психологов",                    en: "For Psychologists" },

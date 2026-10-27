@@ -1082,3 +1082,16 @@ html[lang="ru"] .t-en { display: none; }
 html[lang="en"] .t-ru { display: none; }
 .mu-summary { background: var(--bg-section); border-radius: var(--radius-sm); padding: 16px 20px; margin: 14px 0; color: var(--text-secondary); line-height: 1.65; }
 .mu-summary strong { display: block; margin-bottom: 6px; color: var(--text-primary); }
+
+/* ═══ Domain dividers (Psychology / Sport & physical health) ═══ */
+.apps-domain { text-align: center; margin: 0 auto 30px; max-width: 720px; }
+.apps-group + .apps-domain { margin-top: 84px; }
+.apps-domain__kicker { display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); opacity: 0.9; margin-bottom: 8px; }
+.apps-domain__title { font-size: clamp(1.6rem, 3.4vw, 2.1rem); font-weight: 800; color: var(--text-primary); margin: 0; }
+.apps-domain__sub { color: var(--text-secondary); margin-top: 6px; font-size: 1rem; }
+.apps-domain::after { content: ""; display: block; width: 60px; height: 3px; border-radius: 2px; margin: 16px auto 0; background: linear-gradient(90deg, var(--accent), transparent); }
+
+/* ═══ Padl (Sport group) ═══ */
+:root { --padl: #16b89c; }
+[data-accent="padl"] .app-card__name { color: var(--padl); }
+[data-accent="padl"] .app-card__links a:hover { color: var(--padl); }
