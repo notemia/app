@@ -20,35 +20,38 @@ const T = {
 
   // ── Hero ──────────────────────────────────────
   hero_badge:   { ru: "Приложения для iPhone, iPad и Mac", en: "Apps for iPhone, iPad and Mac" },
-  hero_title_1: { ru: "Инструменты для",              en: "Tools for" },
-  hero_title_2: { ru: "психологов и клиентов",        en: "psychologists & clients" },
+  hero_title_1: { ru: "Приложения для",               en: "Apps for" },
+  hero_title_2: { ru: "ума, тела и души",             en: "mind, body & soul" },
   hero_sub: {
-    ru: "Начало практики для психолога — уязвимый этап профессии: знаний и ответственности уже много, а внутренней опоры ещё мало.<br><br>Здесь вы найдете удобные приложения, которые структурируют ваши знания, помогут развивать практические навыки, готовиться к сессиям, осмыслять свою работу. Это сжатые и структурированные базы знаний по основным модальностям и типовым запросам. А для клиентов — приложения поддержки между встречами.<br><br>Цель — помочь молодому специалисту перейти от тревоги первых сессий к устойчивой и зрелой практике.",
-    en: "The start of practice is a vulnerable stage of the profession: knowledge and responsibility are already plenty, but inner support is still scarce.<br><br>Here you'll find convenient apps that structure your knowledge, help develop practical skills, prepare for sessions and reflect on your work. Compact, structured knowledge bases for core modalities and typical client requests. And for clients — apps that support the process between sessions.<br><br>The goal is to help the young professional move from the anxiety of early sessions to stable, mature practice."
+    ru: "Notemia — небольшие, спокойные приложения для iPhone, iPad и Mac. Три направления, и у каждого свой адресат:<br><br><strong>Психология</strong> — для специалистов и их клиентов: структурированные базы знаний по модальностям и типовым запросам, подготовка к сессиям и рефлексия; клиентам — поддержка между встречами.<br><br><strong>Здоровье тела и спорт</strong> — для тех, кто в движении: разобраться в паделе до первой игры, измерять прогресс в горных прогулках, держать форму — без умных часов и подписок.<br><br><strong>Музыкальное — для души</strong> — развивать слух и чувство звука и возвращать живое удовольствие от музыки.<br><br>Всё работает офлайн, без аккаунтов и трекинга.",
+    en: "Notemia — small, calm apps for iPhone, iPad and Mac. Three directions, each with its own audience:<br><br><strong>Psychology</strong> — for professionals and their clients: structured knowledge bases for modalities and typical requests, session prep and reflection; for clients, support between sessions.<br><br><strong>Body &amp; Sport</strong> — for people in motion: understand padel before your first match, track progress on mountain walks, stay in shape — no smartwatch, no subscriptions.<br><br><strong>Music — for the Soul</strong> — grow your ear and feel for sound, and bring back the living joy of music.<br><br>Everything works offline, with no accounts and no tracking."
   },
   psymap_appstore:  { ru: "https://apps.apple.com/ru/app/psymap/id6758890986?mt=12", en: "https://apps.apple.com/en/app/psymap/id6758890986?mt=12" },
   hero_cta:         { ru: "Смотреть приложения",       en: "View Apps" },
   hero_notemia_cta: { ru: "AI-ассистент для практики", en: "" },
-  tag_this_spring:  { ru: "этой весной",                en: "This spring" },
+  tag_this_spring:  { ru: "уже скоро",                  en: "Coming soon" },
   stat_apps:        { ru: "приложений",                 en: "apps" },
+  stat_dirs:        { ru: "направления",                en: "directions" },
   stat_books:       { ru: "книг и статей",              en: "books & articles" },
 
   // ── Apps section ──────────────────────────────
   apps_title: {
-    ru: "Приложения для ума и тела",
-    en: "Apps for Mind & Body"
+    ru: "Выберите направление",
+    en: "Choose Your Direction"
   },
   apps_sub: {
-    ru: "Два направления: инструменты для психологов и их клиентов — и приложения для спорта и физического здоровья.",
-    en: "Two domains: tools for psychologists and their clients — and apps for sport and physical health."
+    ru: "Каждое приложение решает конкретную задачу. Три направления — для специалистов и клиентов, для тела и для души.",
+    en: "Each app solves a concrete task. Three directions — for professionals and clients, for the body and for the soul."
   },
 
   // ── Domain dividers ───────────────────────────
   domain_k:          { ru: "Направление",                    en: "Domain" },
   domain_psych:      { ru: "Психология",                     en: "Psychology" },
   domain_psych_sub:  { ru: "Для психологов и их клиентов",    en: "For psychologists and their clients" },
-  domain_sport:      { ru: "Спорт и физическое здоровье",     en: "Sport &amp; physical health" },
+  domain_sport:      { ru: "Здоровье тела и спорт",           en: "Body &amp; Sport" },
   domain_sport_sub:  { ru: "Падел, ходьба, движение и форма", en: "Padel, walking, movement and fitness" },
+  domain_music:      { ru: "Музыкальное — для души",          en: "Music — for the Soul" },
+  domain_music_sub:  { ru: "Слух, чувство звука и живое удовольствие от музыки", en: "Hearing, a feel for sound and the living joy of music" },
 
   // ── Padl ──────────────────────────────────────
   padl_badge:   { ru: "Падел-теннис", en: "Padel" },
@@ -61,6 +64,18 @@ const T = {
   padl_f2: { ru: "Умный счёт",       en: "Smart scoreboard" },
   padl_f3: { ru: "Удары и тактика",  en: "Shots &amp; tactics" },
   padl_f4: { ru: "Турниры",          en: "Tournaments" },
+
+  // ── Somatone ──────────────────────────────────
+  somatone_badge:   { ru: "Тренировка слуха", en: "Ear Training" },
+  somatone_tagline: { ru: "Почувствуй звук. Узнай ноту.", en: "Feel pitch. Know the note." },
+  somatone_desc: {
+    ru: "У каждой ноты есть ощущение. Somatone развивает относительный и абсолютный слух через чувство звука: ты находишь, где нота живёт у тебя, закрепляешь это ощущение и привязываешь к нему ноты и мелодии. 13 упражнений на настоящей музыке, честный прогресс по пяти навыкам отдельно. Пой или просто слушай. Всё на устройстве, без аккаунтов. Девять языков.",
+    en: "Every note has a feel. Somatone builds relative and absolute pitch through sensation: you find where a note lives for you, anchor that feeling, then tie notes and melodies to it. 13 exercises on real music, honest progress across five skills measured separately. Sing or just listen. All on-device, no accounts. Nine languages."
+  },
+  somatone_f1: { ru: "13 упражнений",   en: "13 exercises" },
+  somatone_f2: { ru: "5 навыков слуха", en: "5 hearing skills" },
+  somatone_f3: { ru: "Пение по желанию", en: "Singing optional" },
+  somatone_f4: { ru: "9 языков",        en: "9 languages" },
 
   // ── Group headers ─────────────────────────────
   group_pro_label:    { ru: "Для психологов",                    en: "For Psychologists" },
