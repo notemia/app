@@ -20,18 +20,17 @@ const T = {
 
   // ── Hero ──────────────────────────────────────
   hero_badge:   { ru: "Приложения для iPhone, iPad и Mac", en: "Apps for iPhone, iPad and Mac" },
-  hero_title_1: { ru: "Приложения для",               en: "Apps for" },
-  hero_title_2: { ru: "ума, тела и души",             en: "mind, body & soul" },
+  hero_title_1: { ru: "Инструменты для",              en: "Tools for" },
+  hero_title_2: { ru: "психологов и клиентов",        en: "psychologists & clients" },
   hero_sub: {
-    ru: "Notemia — небольшие, спокойные приложения для iPhone, iPad и Mac. Три направления, и у каждого свой адресат:<br><br><strong>Психология</strong> — для специалистов и их клиентов: структурированные базы знаний по модальностям и типовым запросам, подготовка к сессиям и рефлексия; клиентам — поддержка между встречами.<br><br><strong>Здоровье тела и спорт</strong> — для тех, кто в движении: разобраться в паделе до первой игры, измерять прогресс в горных прогулках, держать форму — без умных часов и подписок.<br><br><strong>Музыкальное — для души</strong> — развивать слух и чувство звука и возвращать живое удовольствие от музыки.<br><br>Всё работает офлайн, без аккаунтов и трекинга.",
-    en: "Notemia — small, calm apps for iPhone, iPad and Mac. Three directions, each with its own audience:<br><br><strong>Psychology</strong> — for professionals and their clients: structured knowledge bases for modalities and typical requests, session prep and reflection; for clients, support between sessions.<br><br><strong>Body &amp; Sport</strong> — for people in motion: understand padel before your first match, track progress on mountain walks, stay in shape — no smartwatch, no subscriptions.<br><br><strong>Music — for the Soul</strong> — grow your ear and feel for sound, and bring back the living joy of music.<br><br>Everything works offline, with no accounts and no tracking."
+    ru: "Начало практики для психолога — уязвимый этап профессии: знаний и ответственности уже много, а внутренней опоры ещё мало.<br><br>Здесь вы найдете удобные приложения, которые структурируют ваши знания, помогут развивать практические навыки, готовиться к сессиям, осмыслять свою работу. Это сжатые и структурированные базы знаний по основным модальностям и типовым запросам. А для клиентов — приложения поддержки между встречами.<br><br>Цель — помочь молодому специалисту перейти от тревоги первых сессий к устойчивой и зрелой практике.",
+    en: "The start of practice is a vulnerable stage of the profession: knowledge and responsibility are already plenty, but inner support is still scarce.<br><br>Here you'll find convenient apps that structure your knowledge, help develop practical skills, prepare for sessions and reflect on your work. Compact, structured knowledge bases for core modalities and typical client requests. And for clients — apps that support the process between sessions.<br><br>The goal is to help the young professional move from the anxiety of early sessions to stable, mature practice."
   },
   psymap_appstore:  { ru: "https://apps.apple.com/ru/app/psymap/id6758890986?mt=12", en: "https://apps.apple.com/en/app/psymap/id6758890986?mt=12" },
   hero_cta:         { ru: "Смотреть приложения",       en: "View Apps" },
   hero_notemia_cta: { ru: "AI-ассистент для практики", en: "" },
   tag_this_spring:  { ru: "уже скоро",                  en: "Coming soon" },
   stat_apps:        { ru: "приложений",                 en: "apps" },
-  stat_dirs:        { ru: "направления",                en: "directions" },
   stat_books:       { ru: "книг и статей",              en: "books & articles" },
 
   // ── Apps section ──────────────────────────────
