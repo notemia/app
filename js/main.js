@@ -54,10 +54,10 @@ const T = {
 
   // ── Padl ──────────────────────────────────────
   snowboard_badge:   { ru: "Сноуборд", en: "Snowboarding" },
-  snowboard_tagline: { ru: "Как кататься на сноуборде: 3D-уроки и игра на горе", en: "How to snowboard: 3D lessons and a mountain game" },
-  snowboard_desc:    { ru: "Каждый поворот в 3D и в замедлении, падения, подъёмники и правила склона. А потом наклоняй телефон и катай пять гор: глубокий карвинг, трамплины, сальто. 21 урок, без интернета и аккаунта.", en: "Every turn in slow-motion 3D, with falls, lifts and slope rules. Then tilt your phone and ride five mountains: deep carves, kickers, flips. 21 lessons, offline, no account." },
+  snowboard_tagline: { ru: "Сноуборд: 3D-уроки и игра", en: "Snowboarding: 3D lessons and a riding game" },
+  snowboard_desc:    { ru: "Уроки показывают каждое движение в 3D и в замедлении. В игре ты катаешься сам на пяти трассах, наклоняя телефон. Без интернета и аккаунта.", en: "Lessons show every move in slow-motion 3D. In the game, you ride five courses yourself by tilting your phone. Offline, no account." },
   snowboard_f1:      { ru: "21 урок", en: "21 lessons" },
-  snowboard_f2:      { ru: "Игра на 5 горах", en: "Game on 5 mountains" },
+  snowboard_f2:      { ru: "Игра на 5 трассах", en: "Game on 5 courses" },
   snowboard_f3:      { ru: "Падения и подъёмники", en: "Falls and lifts" },
   snowboard_f4:      { ru: "9 языков", en: "9 languages" },
 
