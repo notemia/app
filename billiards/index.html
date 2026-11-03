@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Бильярд — сложные техники</title>
+<meta name="description" content="Русский бильярд для iPhone, iPad и Mac: 28 уроков техники, лаборатория удара и партия против честного соперника. Работает без интернета.">
+<link rel="canonical" href="https://notemia.app/billiards/">
+<meta name="theme-color" content="#12382c">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Бильярд — сложные техники">
+<meta property="og:title" content="Бильярд — сложные техники русской пирамиды">
+<meta property="og:description" content="28 уроков техники, лаборатория удара и партия против честного соперника. Для iPhone, iPad и Mac, без интернета.">
+<meta property="og:url" content="https://notemia.app/billiards/">
+<meta property="og:image" content="https://notemia.app/billiards/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Unbounded:wght@500;700&display=swap">
+<style>
+/* Layout: a dark cloth page, one ivory band for the lessons, a playable table right after the hero. */
+:root {
+  color-scheme: dark;
+  --cloth-deep: #0b211b;
+  --cloth: #12382c;
+  --cloth-lit: #1d6a4e;
+  --panel: #173d32;
+  --line: rgba(243, 234, 215, .16);
+  --ivory: #f3ead7;
+  --ivory-dim: #b9c4b4;
+  --gold: #e7b93e;
+  --mahogany: #6a2f18;
+  --ink: #17261f;
+  --ink-dim: #55635b;
+  --chalk: #7fa8dc;
+  --display: "Unbounded", "Golos Text", system-ui, sans-serif;
+  --body: "Golos Text", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--cloth-deep); color: var(--ivory); font: 400 17px/1.55 var(--body); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+img, video { display: block; max-width: 100%; }
+a { color: inherit; }
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+p { margin: 0; }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 6px; }
+.wrap { max-width: 1120px; margin-inline: auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+.eyebrow { font: 600 13px/1.3 var(--body); letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }
+h2 { font: 700 clamp(26px, 4.2vw, 42px)/1.14 var(--display); letter-spacing: -.02em; }
+.lead { color: var(--ivory-dim); max-width: 58ch; }
+section { padding-block: clamp(56px, 8vw, 96px); }
+.head { display: grid; gap: 14px; margin-bottom: clamp(28px, 4vw, 44px); }
+
+/* Header */
+header.top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 18px; position: relative; z-index: 2; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 600; text-decoration: none; }
+.brand img { width: 32px; height: 32px; border-radius: 8px; }
+nav { display: flex; align-items: center; gap: clamp(12px, 2.4vw, 26px); font-size: 15px; }
+nav a { text-decoration: none; color: var(--ivory-dim); }
+nav a:hover { color: var(--ivory); }
+.lang { background: none; color: var(--ivory); border: 1px solid var(--line); border-radius: 99px; padding: 6px 14px; font: 600 14px var(--body); cursor: pointer; }
+.lang:hover { border-color: var(--ivory); }
+
+/* Hero */
+.hero { position: relative; background: radial-gradient(900px 620px at 72% 18%, var(--cloth-lit), transparent 68%), linear-gradient(170deg, var(--cloth), var(--cloth-deep) 78%); overflow: hidden; }
+.track { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.track path { fill: none; stroke: var(--ivory); stroke-opacity: .13; stroke-width: 1.5; stroke-dasharray: 2 7; }
+.track-ball { position: absolute; left: 0; top: 0; width: 18px; height: 18px; border-radius: 50%; background: radial-gradient(circle at 36% 30%, #fff3b8, var(--gold) 46%, #8a6412); box-shadow: 0 5px 10px rgba(0, 0, 0, .35); offset-rotate: 0deg; animation: run 13s cubic-bezier(.3, .1, .4, 1) infinite; opacity: .95; }
+@keyframes run { 0% { offset-distance: 0%; } 62%, 100% { offset-distance: 100%; } }
+.hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr); gap: clamp(24px, 5vw, 64px); align-items: center; padding-block: clamp(18px, 3vw, 40px) 0; }
+.hero-copy { display: grid; gap: 22px; padding-bottom: 44px; align-content: center; }
+h1 { font: 700 clamp(36px, 5.7vw, 64px)/1.06 var(--display); letter-spacing: -.035em; }
+h1 span { display: block; color: var(--gold); font-weight: 500; font-size: .62em; line-height: 1.2; letter-spacing: -.02em; margin-top: .4em; }
+.hero-copy .lead { font-size: clamp(17px, 2vw, 20px); color: #dfe4d4; }
+.cta { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 0 24px; border-radius: 99px; font: 600 16px var(--body); text-decoration: none; cursor: pointer; border: 1px solid transparent; transition: transform .15s ease, background .15s ease; }
+.btn:hover { transform: translateY(-2px); }
+.btn.primary { background: var(--gold); color: #24190a; }
+.btn.ghost { background: rgba(243, 234, 215, .08); border-color: var(--line); color: var(--ivory); }
+.status { display: flex; gap: 9px; align-items: baseline; font-size: 14.5px; color: var(--ivory-dim); }
+.status::before { content: ""; flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--gold); transform: translateY(-1px); }
+.stats { display: flex; flex-wrap: wrap; gap: 18px clamp(22px, 3.4vw, 40px); margin: 6px 0 0; padding: 0; list-style: none; }
+.stats b { display: block; font: 700 25px/1.1 var(--display); letter-spacing: -.03em; }
+.stats span { font-size: 13.5px; color: var(--ivory-dim); }
+.phone { position: relative; background: #05090a; border-radius: 13% / 6.2%; padding: 2.8%; box-shadow: 0 30px 70px rgba(0, 0, 0, .5), 0 0 0 1px rgba(255, 255, 255, .12); max-width: 100%; }
+.phone > img, .phone > video { width: 100%; aspect-ratio: 1206 / 2622; object-fit: cover; border-radius: 11% / 5.2%; background: #05090a; }
+.phone::after { content: ""; position: absolute; top: 3.8%; left: 50%; width: 30%; height: 3.1%; background: #000; border-radius: 99px; transform: translateX(-50%); }
+.hero-phone { width: min(330px, 100%); margin-inline: auto; margin-bottom: -96px; animation: rise .9s cubic-bezier(.2, .8, .2, 1) both; }
+@keyframes rise { from { transform: translateY(48px); } to { transform: none; } }
+
+/* Demo */
+.demo { position: relative; background: var(--cloth-deep); border-top: 1px solid var(--line); }
+.demo-grid { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: clamp(18px, 3vw, 36px); align-items: start; }
+.tablebox { border-radius: 16px; overflow: hidden; box-shadow: 0 24px 50px rgba(0, 0, 0, .4); background: #34170c; }
+#table { display: block; width: 100%; aspect-ratio: 2.06 / 1; touch-action: manipulation; }
+.readout { display: grid; gap: 4px; margin-top: 14px; min-height: 76px; font-size: 15.5px; }
+.readout b { font-weight: 600; color: var(--gold); }
+.note { color: var(--ivory-dim); font-size: 13.5px; }
+.controls { display: grid; gap: 18px; }
+.tip-row { display: grid; grid-template-columns: 116px 1fr; gap: 16px; align-items: center; }
+#tip { position: relative; width: 116px; height: 116px; border-radius: 50%; background: radial-gradient(circle at 38% 32%, #fffdf4, #e8dcbf 62%, #b8a77f); cursor: grab; touch-action: none; }
+#tip::before, #tip::after { content: ""; position: absolute; background: rgba(0, 0, 0, .18); }
+#tip::before { left: 50%; top: 6%; bottom: 6%; width: 1px; }
+#tip::after { top: 50%; left: 6%; right: 6%; height: 1px; }
+#tip i { position: absolute; left: 50%; top: 50%; width: 16%; height: 16%; margin: -8% 0 0 -8%; background: #2d68c4; border-radius: 50%; box-shadow: 0 1px 4px rgba(0, 0, 0, .4); z-index: 1; }
+#tip s { position: absolute; inset: 19%; border: 1px dashed rgba(190, 90, 30, .7); border-radius: 50%; }
+.tip-text { font-size: 14px; color: var(--ivory-dim); }
+.tip-text b { display: block; font: 500 14px var(--mono); color: var(--ivory); margin-top: 4px; }
+.chips { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.chip { min-height: 42px; border-radius: 10px; border: 1px solid var(--line); background: rgba(243, 234, 215, .05); color: var(--ivory); font: 500 15px var(--body); cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--ivory); color: var(--ink); border-color: var(--ivory); }
+.power { display: grid; gap: 6px; font-size: 14px; color: var(--ivory-dim); }
+.power div { display: flex; justify-content: space-between; }
+.power output { font-family: var(--mono); color: var(--ivory); }
+input[type=range] { width: 100%; accent-color: var(--gold); margin: 0; }
+#strike { width: 100%; }
+
+/* Gameplay */
+.game { background: linear-gradient(180deg, var(--cloth-deep), var(--cloth)); }
+.shots { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(216px, 1fr); gap: 20px; overflow-x: auto; scroll-snap-type: x proximity; padding-bottom: 14px; }
+.shot { scroll-snap-align: start; display: grid; gap: 14px; align-content: start; }
+.shot h3 { font: 600 17px/1.3 var(--body); }
+.shot p { font-size: 15px; color: var(--ivory-dim); margin-top: 5px; }
+.feats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 34px; }
+.feat { background: var(--panel); border-radius: 12px; padding: 18px; }
+.feat h3 { font: 600 16px/1.3 var(--body); margin-bottom: 6px; }
+.feat p { font-size: 14.5px; color: var(--ivory-dim); line-height: 1.45; }
+
+/* Lessons */
+.lessons { --ivory-dim: var(--ink-dim); background: var(--ivory); color: var(--ink); }
+.lessons .eyebrow { color: #9a4a1c; }
+.stages { display: flex; flex-wrap: wrap; gap: 6px 8px; margin: 0 0 clamp(30px, 4vw, 46px); padding: 0; list-style: none; counter-reset: s; }
+.stages li { counter-increment: s; display: flex; align-items: center; gap: 8px; padding: 9px 14px 9px 10px; border-radius: 99px; background: rgba(23, 38, 31, .07); font-weight: 500; font-size: 15px; transition: background .35s, color .35s; }
+.stages li::before { content: counter(s); font: 500 12px var(--mono); width: 21px; height: 21px; display: grid; place-items: center; border-radius: 50%; background: rgba(23, 38, 31, .1); }
+.stages li.on { background: var(--cloth); color: var(--ivory); }
+.stages li.on::before { background: var(--gold); color: #24190a; }
+.lessons-grid { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: clamp(28px, 5vw, 60px); align-items: start; }
+.modules { list-style: none; margin: 0; padding: 0; display: grid; }
+.modules li { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 2px 12px; padding: 15px 0; border-top: 1px solid rgba(23, 38, 31, .15); }
+.modules b { grid-row: span 2; font: 700 19px/1.3 var(--display); color: #9a4a1c; }
+.modules h3 { font: 600 17px/1.3 var(--body); }
+.modules p { font-size: 15px; color: var(--ink-dim); }
+.lessons .phone { box-shadow: 0 24px 50px rgba(23, 38, 31, .3); }
+
+/* Opponent + physics */
+.two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(36px, 6vw, 72px); }
+.two > div { display: grid; gap: 16px; align-content: start; }
+.levels { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 8px; }
+.levels li { display: grid; grid-template-columns: 24px 118px minmax(0, 1fr); gap: 10px; align-items: center; font-size: 15px; }
+.levels b { font: 500 13px var(--mono); color: var(--ivory-dim); }
+.levels i { display: block; height: 7px; border-radius: 9px; background: linear-gradient(90deg, var(--gold), #f7dc8a); width: var(--w); transform-origin: left; }
+.levels small { display: block; grid-column: 3; color: var(--ivory-dim); }
+.phys { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 12px; }
+.phys li { padding-left: 18px; position: relative; font-size: 15.5px; color: var(--ivory-dim); }
+.phys li::before { content: ""; position: absolute; left: 0; top: .55em; width: 8px; height: 8px; border-radius: 50%; background: var(--chalk); }
+.phys b { color: var(--ivory); font-weight: 600; }
+
+/* Honest, FAQ, final */
+.honest { background: var(--cloth); }
+.honest ul { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px clamp(24px, 5vw, 56px); }
+.honest li { padding-top: 14px; border-top: 1px solid var(--line); font-size: 16px; color: #dfe4d4; }
+details { border-top: 1px solid var(--line); padding-block: 16px; }
+details:last-child { border-bottom: 1px solid var(--line); }
+summary { font-weight: 600; cursor: pointer; }
+details p { margin-top: 10px; color: var(--ivory-dim); max-width: 66ch; }
+.final { text-align: center; background: radial-gradient(700px 360px at 50% 100%, var(--cloth-lit), transparent 72%); }
+.final .wrap { display: grid; gap: 20px; justify-items: center; }
+footer { padding-block: 24px 36px; color: var(--ivory-dim); font-size: 14px; border-top: 1px solid var(--line); }
+
+/* Small lift when a block scrolls in; it starts visible, so nothing depends on the observer */
+.lift { transition: transform .7s cubic-bezier(.2, .8, .2, 1); }
+.lift.pre { transform: translateY(26px); }
+
+@media (max-width: 900px) {
+  .hero-grid, .demo-grid, .lessons-grid, .two { grid-template-columns: minmax(0, 1fr); }
+  .hero-copy { padding-bottom: 8px; }
+  .hero-phone { width: min(270px, 74%); margin-bottom: -70px; }
+  .controls { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+  .lessons-grid .phone { width: min(260px, 72%); margin-inline: auto; }
+  .feats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .honest ul { grid-template-columns: minmax(0, 1fr); }
+  .shots { grid-auto-columns: 216px; }
+}
+@media (max-width: 560px) {
+  nav a { display: none; }
+  .feats { grid-template-columns: minmax(0, 1fr); }
+  .btn { flex: 1 1 100%; }
+  .readout { min-height: 96px; }
+  .track-ball { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .track-ball, .hero-phone { animation: none; }
+  .track-ball { display: none; }
+  .lift, .lift.pre { transition: none; transform: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <svg class="track" viewBox="0 0 1200 760" preserveAspectRatio="none" aria-hidden="true"><path d="M-30 690 L520 40 L1010 450 L690 790"/></svg>
+  <div class="track-ball" aria-hidden="true" style="offset-path: path('M-30 690 L520 40 L1010 450 L690 790')"></div>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="#"><img src="assets/icon.png" alt="" width="32" height="32"><span data-en="Billiards">Бильярд</span></a>
+      <nav aria-label="Разделы">
+        <a href="#demo" data-en="Try a shot">Удар</a>
+        <a href="#lessons" data-en="Lessons">Уроки</a>
+        <a href="#faq" data-en="FAQ">Вопросы</a>
+        <button class="lang" id="lang" type="button">English</button>
+      </nav>
+    </header>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1 data-en="Billiards <span>advanced Russian pyramid technique</span>">Бильярд <span>сложные техники русской пирамиды</span></h1>
+        <p class="lead" data-en="Understand why a shot works, then play it. Lessons, a shot lab and a fair opponent on a 12-foot table with strict pockets.">Поймите, почему удар получается, и сыграйте его сами. Уроки, лаборатория удара и честный соперник на 12-футовом столе со строгими лузами.</p>
+        <div class="cta">
+          <a class="btn primary" href="#demo" data-en="Try a shot here">Попробовать удар</a>
+          <a class="btn ghost" href="#lessons" data-en="See the lessons">Смотреть уроки</a>
+        </div>
+        <p class="status" data-en="Coming to the App Store. In testing on TestFlight.">Скоро в App Store. Сейчас идёт тест в TestFlight.</p>
+        <ul class="stats">
+          <li><b>28</b><span data-en="lessons">уроков</span></li>
+          <li><b>7</b><span data-en="modules">модулей</span></li>
+          <li><b>5</b><span data-en="opponent levels">уровней соперника</span></li>
+          <li><b data-en="Offline">Офлайн</b><span data-en="no account, no ads">без аккаунта и рекламы</span></li>
+        </ul>
+      </div>
+      <div class="phone hero-phone">
+        <video id="heroVideo" src="assets/hero.mp4" poster="assets/hero.jpg" autoplay muted loop playsinline aria-label="Запись партии в приложении: разбой и следующие удары"></video>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="demo" id="demo">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow" data-en="Try it">Попробуйте</p>
+      <h2 data-en="One point on the ball changes everything">Одна точка на шаре меняет всё</h2>
+      <p class="lead" data-en="Move the blue point and strike. The grey line is your previous shot, so you can compare them.">Сдвиньте синюю точку и ударьте. Серая линия — прошлый удар, их можно сравнить.</p>
+    </div>
+    <div class="demo-grid">
+      <div>
+        <div class="tablebox"><canvas id="table" role="img" aria-label="Стол сверху: биток, прицельный шар и линии движения"></canvas></div>
+        <div class="readout" aria-live="polite">
+          <p id="rContact" data-en="Choose a shot on the right.">Выберите удар.</p>
+          <p id="rResult"></p>
+          <p class="note" data-en="A simplified model for this page. The app has its own, far more detailed physics.">Упрощённая модель для этой страницы. В приложении своя, намного более подробная физика.</p>
+        </div>
+      </div>
+      <div class="controls">
+        <div class="tip-row">
+          <div id="tip" tabindex="0" role="slider" aria-label="Точка удара по битку" aria-valuemin="-60" aria-valuemax="60" aria-valuenow="0"><s></s><i></i></div>
+          <div class="tip-text"><span data-en="Where the tip hits the ball">Куда наклейка бьёт по шару</span><b id="tipVal">0,00 / 0,00</b></div>
+        </div>
+        <div class="chips" role="group" aria-label="Готовые удары">
+          <button class="chip" type="button" data-shot="stop" data-en="Stop">Стоп</button>
+          <button class="chip" type="button" data-shot="follow" data-en="Follow">Накат</button>
+          <button class="chip" type="button" data-shot="draw" data-en="Draw">Оттяжка</button>
+          <button class="chip" type="button" data-shot="side" data-en="Sidespin">Винт</button>
+        </div>
+        <label class="power">
+          <div><span data-en="Cue speed">Скорость кия</span><output id="powerVal">2,2</output></div>
+          <input type="range" id="power" min="0.6" max="4" step="0.1" value="2.2">
+        </label>
+        <button class="btn primary" id="strike" type="button" data-en="Strike">Ударить</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="game" id="game">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow" data-en="At the table">За столом</p>
+      <h2 data-en="The cue is in your finger">Кий у вас под пальцем</h2>
+      <p class="lead" data-en="The table takes the screen. Everything else appears when you ask for it.">Экран занят столом. Всё остальное появляется, когда нужно.</p>
+    </div>
+    <div class="shots">
+      <figure class="shot lift" style="margin:0">
+        <div class="phone"><img data-shot-img="aim" src="assets/aim_ru.jpg" alt="Вид за кием: биток, кий, прицельная линия и полоса оттяжки" loading="lazy"></div>
+        <figcaption><h3 data-en="Pull back and release">Оттяните и отпустите</h3><p data-en="The further you pull, the harder the shot. Pull back to the start to cancel.">Чем дальше оттянули, тем сильнее удар. Вернули назад — удар отменён.</p></figcaption>
+      </figure>
+      <figure class="shot lift" style="margin:0">
+        <div class="phone"><img data-shot-img="spin" src="assets/spin_ru.jpg" alt="Открытая панель: точка удара, подъём кия и точный прицел" loading="lazy"></div>
+        <figcaption><h3 data-en="Spin and elevation on demand">Винт и подъём по запросу</h3><p data-en="The table shrinks and stays visible while you set the shot.">Стол уменьшается, но остаётся на виду, пока вы настраиваете удар.</p></figcaption>
+      </figure>
+      <figure class="shot lift" style="margin:0">
+        <div class="phone"><img data-shot-img="top" src="assets/top_ru.jpg" alt="Вид сверху на стол с прицельной линией" loading="lazy"></div>
+        <figcaption><h3 data-en="Read the whole table">Видно весь стол</h3><p data-en="One button switches between the view from above and the view behind the cue.">Одна кнопка переключает вид сверху и вид за кием.</p></figcaption>
+      </figure>
+      <figure class="shot lift" style="margin:0">
+        <div class="phone"><img data-shot-img="text" src="assets/text_ru.jpg" alt="Урок: стол сверху и объяснение под ним" loading="lazy"></div>
+        <figcaption><h3 data-en="Explained in place">Объяснение рядом</h3><p data-en="The lesson text sits next to the table and folds into one line.">Текст урока рядом со столом и сворачивается в одну строку.</p></figcaption>
+      </figure>
+    </div>
+    <div class="feats">
+      <div class="feat"><h3 data-en="Automatic elevation">Подъём кия сам</h3><p data-en="Near a rail or a ball, the cue lifts just enough to clear it. The physics takes this into account.">У борта или шара кий поднимается ровно настолько, чтобы пройти. Физика это учитывает.</p></div>
+      <div class="feat"><h3 data-en="Aim to 0.1°">Прицел до 0,1°</h3><p data-en="Strict pockets need it. There is a fine mode and an aim lock.">Строгим лузам это нужно. Есть точный режим и блокировка прицела.</p></div>
+      <div class="feat"><h3 data-en="Replay at ¼ speed">Повтор в ¼ скорости</h3><p data-en="Scrub through a shot and see every contact on a timeline.">Перематывайте удар и смотрите каждое касание на шкале.</p></div>
+      <div class="feat"><h3 data-en="Shot lab">Лаборатория</h3><p data-en="Place the balls and change one parameter at a time. Compare two shots side by side.">Расставьте шары и меняйте один параметр. Сравнивайте два удара рядом.</p></div>
+      <div class="feat"><h3 data-en="Left-handed mode">Режим левши</h3><p data-en="The controls move to the other side. The physics of spin stays the same.">Управление переходит на другую сторону. Физика винта не меняется.</p></div>
+      <div class="feat"><h3 data-en="Real-table diary">Дневник реального стола</h3><p data-en="Your results at a real table are kept apart from the simulator's.">Результаты за настоящим столом хранятся отдельно от симулятора.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="lessons" id="lessons">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow" data-en="Lessons">Уроки</p>
+      <h2 data-en="28 lessons, 7 steps each">28 уроков, в каждом 7 шагов</h2>
+      <p class="lead" data-en="First you predict what will happen. Then you see it, change one parameter and try it yourself. The last step takes you to a real table.">Сначала вы предполагаете, что будет. Потом видите это, меняете один параметр и пробуете сами. Последний шаг ведёт к настоящему столу.</p>
+    </div>
+    <ol class="stages" id="stages">
+      <li data-en="Goal">Задача</li><li data-en="Predict">Прогноз</li><li data-en="Example">Пример</li><li data-en="One parameter">Один параметр</li><li data-en="Your turn">Выполнение</li><li data-en="Review">Разбор</li><li data-en="Real table">Реальный стол</li>
+    </ol>
+    <div class="lessons-grid">
+      <ul class="modules">
+        <li><b>A</b><h3 data-en="Geometry and control">Геометрия и контроль</h3><p data-en="Cue-ball state at contact, cut thickness, speed control">Состояние битка в момент встречи, толщина, размер удара</p></li>
+        <li><b>B</b><h3 data-en="Follow and draw">Накат и оттяжка</h3><p data-en="Vertical-plane spin and how the cloth removes it">Продольное вращение и его потеря на сукне</p></li>
+        <li><b>C</b><h3 data-en="Sidespin and curve">Боковое вращение и дуга</h3><p data-en="Squirt, throw, combined spin, elevated cue">Squirt, throw, комбинированные винты, наклонный кий</p></li>
+        <li><b>D</b><h3 data-en="In-offs (svoyak)">Свояки</h3><p data-en="Potting the striker off an object ball">Биток в лузу от прицельного шара</p></li>
+        <li><b>E</b><h3 data-en="Rails and strict pockets">Борты и строгие лузы</h3><p data-en="Rebound with spin, position routes, banks, jaws">Отскок с вращением, выходы, дуплет, скулы</p></li>
+        <li><b>F</b><h3 data-en="Safety play">Отыгрыш</h3><p data-en="Controlling both balls and what you leave">Контроль обоих шаров и позиция для соперника</p></li>
+        <li><b>G</b><h3 data-en="Strategy">Стратегия</h3><p data-en="Score, risk, choosing the option, endgame">Счёт, риск, выбор варианта и концовка</p></li>
+      </ul>
+      <div class="phone lift"><img data-shot-img="school" src="assets/school_ru.jpg" alt="Раздел «Школа»: список модулей и уроков" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section id="match">
+  <div class="wrap two">
+    <div>
+      <p class="eyebrow" data-en="The match">Партия</p>
+      <h2 data-en="An opponent that does not give in">Соперник без поддавков</h2>
+      <p class="lead" data-en="It plays through the same physics and rules as you. Its error is applied once, to the shot input. There is no bonus accuracy and no easing off by score.">Он играет по той же физике и тем же правилам, что и вы. Ошибка применяется один раз, ко входу удара. Нет бонусов к точности и подыгрывания по счёту.</p>
+      <ul class="levels" id="levels">
+        <li><b>1</b><span data-en="Beginner">Начальный</span><i style="--w:18%"></i></li>
+        <li><b>2</b><span data-en="Amateur">Любительский</span><i style="--w:36%"></i></li>
+        <li><b>3</b><span data-en="Club">Клубный</span><i style="--w:56%"></i></li>
+        <li><b>4</b><span data-en="Advanced">Сильный</span><i style="--w:78%"></i></li>
+        <li><b>5</b><span data-en="Expert">Эксперт</span><i style="--w:100%"></i></li>
+      </ul>
+      <p class="note" data-en="Levels are simulator categories, not sports ranks. Free and combined pyramid under the IPA (MKP) 2025 rules. Two people can also play on one device.">Уровни — категории симулятора, а не спортивные разряды. Свободная и комбинированная пирамида по правилам МКП 2025. Можно играть и вдвоём на одном устройстве.</p>
+    </div>
+    <div>
+      <p class="eyebrow" data-en="The physics">Физика</p>
+      <h2 data-en="Events, not frames">События, а не кадры</h2>
+      <p class="lead" data-en="The engine calculates each transition and contact, so the result does not depend on the frame rate.">Движок считает каждый переход и касание, поэтому результат не зависит от частоты кадров.</p>
+      <ul class="phys">
+        <li data-en="<b>Slide and roll.</b> The cue ball slides, then rolls, and spin wears off on the cloth.">
+          <b>Скольжение и качение.</b> Биток скользит, затем катится, вращение теряется на сукне.</li>
+        <li data-en="<b>Throw and squirt.</b> Ball friction moves the object ball, and side spin moves the cue ball off line.">
+          <b>Throw и squirt.</b> Трение шаров уводит прицельный, боковой удар уводит биток.</li>
+        <li data-en="<b>Rails and jaws.</b> Cushion impact is integrated numerically, Mathavan-style.">
+          <b>Борта и скулы.</b> Удар в борт считается численно, по схеме Mathavan.</li>
+        <li data-en="<b>Strict pockets.</b> Geometry from the archived FBSR 2020 specification.">
+          <b>Строгие лузы.</b> Геометрия по архивным техническим требованиям ФБСР 2020.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="honest">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow" data-en="To be clear">Честно</p>
+      <h2 data-en="What the app doesn't do">Чего приложение не делает</h2>
+    </div>
+    <ul>
+      <li data-en="It does not make you a professional. It helps you understand a shot and practise it.">Не сделает вас профессионалом. Оно помогает понять удар и отработать его.</li>
+      <li data-en="It is not calibrated on a real table yet. The coefficients come from pool literature or were chosen for the model.">Пока не откалибровано на реальном столе. Коэффициенты взяты из литературы по пулу или выбраны для модели.</li>
+      <li data-en="A predicted path is a result of the model. It is no guarantee on your table.">Прогноз траектории — результат модели, а не гарантия на вашем столе.</li>
+      <li data-en="It does not use the camera or microphone and cannot see how you play.">Не использует камеру и микрофон и не видит, как вы играете.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="head"><p class="eyebrow" data-en="Questions">Вопросы</p><h2 data-en="Short answers">Коротко</h2></div>
+    <details><summary data-en="Which devices does it run on?">На чём работает?</summary><p data-en="iPhone and iPad with iOS 18 or later, and Mac with macOS 15 or later. Russian and English.">iPhone и iPad с iOS 18 и новее, Mac с macOS 15 и новее. Русский и английский языки.</p></details>
+    <details><summary data-en="Does it need internet or an account?">Нужны интернет или аккаунт?</summary><p data-en="No. It works fully offline. There is no account, server, analytics or advertising.">Нет. Всё работает офлайн. Нет аккаунта, сервера, аналитики и рекламы.</p></details>
+    <details><summary data-en="Is the opponent a neural network?">Соперник — нейросеть?</summary><p data-en="No. It is an ordinary algorithm: it generates candidate shots, tests them in the same physics engine and picks one. There is no machine learning in the app.">Нет. Это обычный алгоритм: он подбирает варианты ударов, проверяет их тем же физическим движком и выбирает один. Машинного обучения в приложении нет.</p></details>
+    <details><summary data-en="Is it for beginners?">Подойдёт новичку?</summary><p data-en="The focus is on advanced technique, but all lessons are open and the first module starts with cue-ball state at contact.">Упор сделан на сложную технику, но все уроки открыты, а первый модуль начинается с состояния битка в момент встречи.</p></details>
+    <details><summary data-en="When is it out, and what does it cost?">Когда выйдет и сколько стоит?</summary><p data-en="It is in testing now. The release date and price have not been announced.">Сейчас приложение на тестировании. Дата выхода и цена пока не объявлены.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2 data-en="Understand the shot. Then play it.">Поймите удар. Потом сыграйте его.</h2>
+    <p class="lead" data-en="Coming to the App Store for iPhone, iPad and Mac.">Скоро в App Store для iPhone, iPad и Mac.</p>
+    <a class="btn primary" href="#demo" data-en="Try one more shot">Ударить ещё раз</a>
+  </div>
+</section>
+
+<footer><div class="wrap" data-en="Billiards — Advanced Techniques. A simulator and textbook of Russian billiards.">Бильярд — сложные техники. Симулятор и учебник русского бильярда.</div></footer>
+
+<script>
+(function () {
+  "use strict";
+  var reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- language ---------- */
+  var nodes = Array.prototype.slice.call(document.querySelectorAll("[data-en]"));
+  nodes.forEach(function (n) { n.dataset.ru = n.innerHTML; });
+  var lang = "ru";
+  function saved() { try { return localStorage.getItem("lang"); } catch (e) { return null; } }
+  function t(ru, en) { return lang === "en" ? en : ru; }
+  function setLang(l, remember) {
+    lang = l;
+    document.documentElement.lang = l;
+    nodes.forEach(function (n) { n.innerHTML = l === "en" ? n.dataset.en : n.dataset.ru; });
+    document.getElementById("lang").textContent = l === "en" ? "Русский" : "English";
+    document.querySelectorAll("[data-shot-img]").forEach(function (i) { i.src = "assets/" + i.dataset.shotImg + "_" + l + ".jpg"; });
+    if (remember) { try { localStorage.setItem("lang", l); } catch (e) {} }
+    renderTipValue(); renderPower(); writeResult();
+  }
+  document.getElementById("lang").addEventListener("click", function () { setLang(lang === "en" ? "ru" : "en", true); });
+
+  /* ---------- table model: simplified, for this page only ---------- */
+  var L = 1.775, W = 0.8875, R = 0.034, RAIL = 0.11, G = 9.81, MU_SLIDE = 0.2, MU_ROLL = 0.012;
+  var POCKETS = [[-L, -W], [L, -W], [-L, W], [L, W], [0, -W - 0.025], [0, W + 0.025]];
+  var START_CUE = [0.25, 0.05], START_OBJ = [0.95, 0.35], TARGET = [L, W];
+  var canvas = document.getElementById("table"), ctx = canvas.getContext("2d");
+  var tip = { side: 0, vert: 0 }, power = 2.2;
+  var balls, phase = "aim", strokeT = 0, contact = null, potted = {}, ghostTrail = null, aimDir, ghostPos, needsDraw = true;
+  var inView = false, userTouched = false, waitT = 0, autoIdx = 0;
+  var PRESETS = { stop: { side: 0, vert: -0.34 }, follow: { side: 0, vert: 0.42 }, draw: { side: 0, vert: -0.5 }, side: { side: 0.42, vert: 0.08 } };
+  var ORDER = ["follow", "draw", "stop", "side"];
+
+  function sub(a, b) { return [a[0] - b[0], a[1] - b[1]]; }
+  function len(a) { return Math.hypot(a[0], a[1]); }
+  function norm(a) { var l = len(a) || 1; return [a[0] / l, a[1] / l]; }
+  function dot(a, b) { return a[0] * b[0] + a[1] * b[1]; }
+
+  function reset() {
+    balls = [
+      { id: "cue", p: START_CUE.slice(), v: [0, 0], w: [0, 0], om: 0, on: true, trail: [START_CUE.slice()] },
+      { id: "obj", p: START_OBJ.slice(), v: [0, 0], w: [0, 0], om: 0, on: true, trail: [START_OBJ.slice()] }
+    ];
+    var n = norm(sub(TARGET, START_OBJ));
+    ghostPos = [START_OBJ[0] - n[0] * 2 * R, START_OBJ[1] - n[1] * 2 * R];
+    aimDir = norm(sub(ghostPos, START_CUE));
+    contact = null; potted = {};
+  }
+
+  function strike() {
+    if (balls && balls[0].trail.length > 2) ghostTrail = balls[0].trail;
+    reset();
+    phase = "stroke"; strokeT = 0; needsDraw = true;
+    document.getElementById("rContact").textContent = "";
+    document.getElementById("rResult").textContent = "";
+    kick();
+  }
+
+  function launch() {
+    var c = balls[0];
+    c.v = [aimDir[0] * power, aimDir[1] * power];
+    /* tip height a gives wR = 2.5 a V; a = 0.4 is natural roll */
+    var roll = 2.5 * tip.vert * power;
+    c.w = [aimDir[0] * roll, aimDir[1] * roll];
+    c.om = 2.5 * tip.side * power;
+    phase = "run";
+  }
+
+  function stepBall(b, dt) {
+    var u = sub(b.v, b.w), s = len(u);
+    if (s > 0.012) {
+      var a = MU_SLIDE * G * dt, h = [u[0] / s, u[1] / s];
+      b.v[0] -= h[0] * a; b.v[1] -= h[1] * a;
+      b.w[0] += h[0] * a * 2.5; b.w[1] += h[1] * a * 2.5;
+    } else {
+      var sp = len(b.v);
+      if (sp > 0.006) {
+        var k = Math.max(0, 1 - MU_ROLL * G * dt / sp);
+        b.v[0] *= k; b.v[1] *= k;
+      } else { b.v = [0, 0]; }
+      b.w = b.v.slice();
+    }
+    b.om *= Math.exp(-0.5 * dt);
+    b.p[0] += b.v[0] * dt; b.p[1] += b.v[1] * dt;
+  }
+
+  function nearPocket(p) { return POCKETS.some(function (q) { return Math.hypot(p[0] - q[0], p[1] - q[1]) < 0.125; }); }
+
+  function rail(b, n) {
+    var vn = dot(b.v, n);
+    if (vn <= 0) return;
+    b.v[0] -= n[0] * vn * 1.8; b.v[1] -= n[1] * vn * 1.8;
+    /* side spin changes the rebound along the rail */
+    var z = [-n[1], n[0]], k = 0.28 * Math.min(1, vn / 1.2 + 0.25);
+    b.v[0] -= z[0] * b.om * k; b.v[1] -= z[1] * b.om * k;
+    b.om *= 0.55;
+    var wn = dot(b.w, n);
+    b.w[0] -= n[0] * wn * 1.5; b.w[1] -= n[1] * wn * 1.5;
+  }
+
+  function physics(dt) {
+    var moving = false;
+    balls.forEach(function (b) {
+      if (!b.on) return;
+      stepBall(b, dt);
+      if (len(b.v) > 0) moving = true;
+      for (var i = 0; i < POCKETS.length; i++) {
+        if (Math.hypot(b.p[0] - POCKETS[i][0], b.p[1] - POCKETS[i][1]) < 0.072) { b.on = false; potted[b.id] = true; b.trail.push(POCKETS[i].slice()); return; }
+      }
+      if (!nearPocket(b.p)) {
+        if (b.p[0] > L - R) { b.p[0] = L - R; rail(b, [1, 0]); }
+        if (b.p[0] < -L + R) { b.p[0] = -L + R; rail(b, [-1, 0]); }
+        if (b.p[1] > W - R) { b.p[1] = W - R; rail(b, [0, 1]); }
+        if (b.p[1] < -W + R) { b.p[1] = -W + R; rail(b, [0, -1]); }
+      }
+    });
+    var a = balls[0], o = balls[1];
+    if (a.on && o.on) {
+      var d = sub(o.p, a.p), dist = len(d);
+      if (dist < 2 * R) {
+        var n = [d[0] / dist, d[1] / dist], rel = dot(sub(a.v, o.v), n);
+        if (rel > 0) {
+          if (!contact) contact = { speed: len(a.v), ratio: dot(a.w, a.v) / Math.max(1e-6, dot(a.v, a.v)) };
+          var e = 0.94, tA = rel * (1 + e) / 2;
+          a.v[0] -= n[0] * tA; a.v[1] -= n[1] * tA;
+          o.v[0] += n[0] * tA; o.v[1] += n[1] * tA;
+          writeResult(); moving = true;
+        }
+      }
+    }
+    return moving;
+  }
+
+  function writeResult() {
+    var c = document.getElementById("rContact"), r = document.getElementById("rResult");
+    if (!c || !balls || (!contact && phase !== "done")) return;
+    if (contact) {
+      var s = contact.speed.toFixed(2).replace(".", lang === "en" ? "." : ","), q = contact.ratio, state;
+      if (q > 1.08) state = t("с верхним вращением сверх наката", "with more topspin than natural roll");
+      else if (q > 0.92) state = t("уже катился", "already rolling");
+      else if (q > 0.15) state = t("скользил с верхним вращением", "sliding with some topspin");
+      else if (q > -0.15) state = t("скользил почти без вращения", "sliding with almost no spin");
+      else state = t("шёл с нижним вращением", "carrying backspin");
+      c.innerHTML = t("В момент встречи биток ", "At contact the cue ball was ") + "<b>" + state + "</b>" + t(", скорость ", ", speed ") + s + t(" м/с.", " m/s.");
+    } else { c.textContent = t("Биток не дошёл до шара.", "The cue ball did not reach the object ball."); }
+    if (phase === "done") {
+      var txt = potted.obj ? t("Прицельный шар в лузе.", "Object ball pocketed.") : t("Прицельный шар не в лузе.", "Object ball not pocketed.");
+      if (potted.cue) txt += t(" Биток тоже в лузе: в пирамиде это свояк.", " The cue ball went in too: in pyramid that is a svoyak (in-off).");
+      r.textContent = txt;
+    } else { r.textContent = ""; }
+  }
+
+  /* ---------- drawing ---------- */
+  var cssW = 0, cssH = 0, scale = 1;
+  function resize() {
+    var r = canvas.getBoundingClientRect(), d = Math.min(2, devicePixelRatio || 1);
+    cssW = r.width; cssH = r.height;
+    canvas.width = Math.round(r.width * d); canvas.height = Math.round(r.height * d);
+    ctx.setTransform(d, 0, 0, d, 0, 0);
+    scale = cssW / (2 * (L + RAIL));
+    needsDraw = true;
+  }
+  function X(x) { return cssW / 2 + x * scale; }
+  function Y(y) { return cssH / 2 - y * scale; }
+
+  function polyline(pts) { ctx.beginPath(); pts.forEach(function (p, i) { i ? ctx.lineTo(X(p[0]), Y(p[1])) : ctx.moveTo(X(p[0]), Y(p[1])); }); ctx.stroke(); }
+
+  function draw() {
+    ctx.fillStyle = "#4a2011"; ctx.fillRect(0, 0, cssW, cssH);
+    var x0 = X(-L), y0 = Y(W), w = 2 * L * scale, h = 2 * W * scale;
+    var g = ctx.createRadialGradient(X(0), Y(0), 10, X(0), Y(0), w * 0.62);
+    g.addColorStop(0, "#23805c"); g.addColorStop(1, "#0f4a37");
+    ctx.fillStyle = g; ctx.fillRect(x0, y0, w, h);
+    ctx.strokeStyle = "rgba(0,0,0,.35)"; ctx.lineWidth = Math.max(2, scale * 0.02); ctx.strokeRect(x0, y0, w, h);
+    ctx.fillStyle = "#060b09";
+    POCKETS.forEach(function (q) { ctx.beginPath(); ctx.arc(X(q[0]), Y(q[1]), Math.max(7, 0.075 * scale), 0, 7); ctx.fill(); });
+
+    if (ghostTrail) { ctx.strokeStyle = "rgba(243,234,215,.28)"; ctx.lineWidth = 1.5; ctx.setLineDash([]); polyline(ghostTrail); }
+    if (phase === "aim" || phase === "stroke") {
+      ctx.strokeStyle = "rgba(243,234,215,.55)"; ctx.lineWidth = 1; ctx.setLineDash([3, 5]);
+      polyline([START_CUE, ghostPos, TARGET]); ctx.setLineDash([]);
+    }
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = "rgba(231,185,62,.9)"; polyline(balls[0].trail);
+    ctx.strokeStyle = "rgba(243,234,215,.7)"; polyline(balls[1].trail);
+
+    var r = Math.max(4.5, R * scale);
+    balls.forEach(function (b) {
+      if (!b.on) return;
+      var bx = X(b.p[0]), by = Y(b.p[1]);
+      ctx.fillStyle = "rgba(0,0,0,.3)"; ctx.beginPath(); ctx.arc(bx + 1.2, by + 1.8, r, 0, 7); ctx.fill();
+      var rg = ctx.createRadialGradient(bx - r * .35, by - r * .4, r * .1, bx, by, r * 1.05);
+      if (b.id === "cue") { rg.addColorStop(0, "#fff0a8"); rg.addColorStop(.55, "#e7b93e"); rg.addColorStop(1, "#94690f"); }
+      else { rg.addColorStop(0, "#ffffff"); rg.addColorStop(.6, "#eadfc6"); rg.addColorStop(1, "#a9987a"); }
+      ctx.fillStyle = rg; ctx.beginPath(); ctx.arc(bx, by, r, 0, 7); ctx.fill();
+    });
+
+    if (phase === "aim" || phase === "stroke") {
+      var pull = phase === "aim" ? 0.05 : strokeT < 0.42 ? 0.05 + (power / 4) * 0.3 * Math.sin(strokeT / 0.42 * Math.PI / 2) : (0.05 + (power / 4) * 0.3) * (1 - (strokeT - 0.42) / 0.08);
+      var s = [START_CUE[0] - aimDir[0] * (R + pull), START_CUE[1] - aimDir[1] * (R + pull)];
+      var e = [s[0] - aimDir[0] * 1.15, s[1] - aimDir[1] * 1.15];
+      ctx.lineCap = "round";
+      ctx.strokeStyle = "#7c4a24"; ctx.lineWidth = Math.max(3, scale * 0.024); polyline([e, s]);
+      ctx.strokeStyle = "#e0c896"; ctx.lineWidth = Math.max(2, scale * 0.016); polyline([[s[0] - aimDir[0] * 0.55, s[1] - aimDir[1] * 0.55], s]);
+      ctx.strokeStyle = "#4f7fc4"; polyline([[s[0] - aimDir[0] * 0.03, s[1] - aimDir[1] * 0.03], s]);
+      ctx.lineCap = "butt";
+    }
+  }
+
+  /* ---------- loop: runs only while something moves ---------- */
+  var running = false, last = 0;
+  function kick() { if (!running) { running = true; last = performance.now(); requestAnimationFrame(frame); } }
+  function frame(now) {
+    var dt = Math.min(0.05, (now - last) / 1000); last = now;
+    var alive = false;
+    if (phase === "stroke") {
+      strokeT += dt; alive = true;
+      if (strokeT >= 0.5) launch();
+    } else if (phase === "run") {
+      var steps = Math.max(1, Math.round(dt * 240)), moving = false;
+      for (var i = 0; i < steps; i++) moving = physics(1 / 240) || moving;
+      balls.forEach(function (b) { if (b.on && len(b.v) > 0) b.trail.push(b.p.slice()); });
+      alive = true;
+      if (!moving) { phase = "done"; waitT = 0; writeResult(); }
+    } else if (phase === "done" && !userTouched && inView && !reduced) {
+      waitT += dt; alive = true;
+      if (waitT > 2.2) nextAuto();
+    }
+    if (alive || needsDraw) { draw(); needsDraw = false; }
+    if (alive) requestAnimationFrame(frame); else running = false;
+  }
+
+  /* ---------- controls ---------- */
+  var tipEl = document.getElementById("tip"), dotEl = tipEl.querySelector("i");
+  function num(v) { var s = v.toFixed(2); return lang === "en" ? s : s.replace(".", ","); }
+  function renderTipValue() {
+    document.getElementById("tipVal").textContent = t("бок ", "side ") + num(tip.side) + " · " + t("верх ", "height ") + num(tip.vert);
+    tipEl.setAttribute("aria-valuenow", Math.round(tip.vert * 100));
+    tipEl.setAttribute("aria-valuetext", t("бок ", "side ") + num(tip.side) + ", " + t("верх ", "height ") + num(tip.vert));
+    dotEl.style.transform = "translate(" + (tip.side * 58) + "px," + (-tip.vert * 58) + "px)";
+  }
+  function renderPower() { var s = power.toFixed(1); document.getElementById("powerVal").textContent = (lang === "en" ? s : s.replace(".", ",")) + t(" м/с", " m/s"); }
+  function pressChip(name) { document.querySelectorAll(".chip").forEach(function (c) { c.setAttribute("aria-pressed", c.dataset.shot === name ? "true" : "false"); }); }
+  function setTip(s, v) {
+    var m = Math.hypot(s, v);
+    if (m > 0.65) { s *= 0.65 / m; v *= 0.65 / m; }
+    tip.side = s; tip.vert = v; renderTipValue();
+  }
+  function touched() { userTouched = true; }
+  function fromPointer(e) {
+    var r = tipEl.getBoundingClientRect();
+    setTip((e.clientX - r.left - r.width / 2) / (r.width / 2), -(e.clientY - r.top - r.height / 2) / (r.height / 2));
+    pressChip(null);
+  }
+  tipEl.addEventListener("pointerdown", function (e) { touched(); tipEl.setPointerCapture(e.pointerId); fromPointer(e); });
+  tipEl.addEventListener("pointermove", function (e) { if (e.buttons || e.pointerType === "touch") { if (tipEl.hasPointerCapture(e.pointerId)) fromPointer(e); } });
+  tipEl.addEventListener("keydown", function (e) {
+    var map = { ArrowLeft: [-0.05, 0], ArrowRight: [0.05, 0], ArrowUp: [0, 0.05], ArrowDown: [0, -0.05] }, m = map[e.key];
+    if (!m) return;
+    e.preventDefault(); touched(); pressChip(null); setTip(tip.side + m[0], tip.vert + m[1]);
+  });
+  document.querySelectorAll(".chip").forEach(function (c) {
+    c.addEventListener("click", function () {
+      touched(); var p = PRESETS[c.dataset.shot]; setTip(p.side, p.vert); pressChip(c.dataset.shot); strike();
+    });
+  });
+  document.getElementById("power").addEventListener("input", function (e) { touched(); power = parseFloat(e.target.value); renderPower(); });
+  document.getElementById("strike").addEventListener("click", function () { touched(); strike(); });
+  canvas.addEventListener("click", function () { touched(); strike(); });
+
+  function nextAuto() {
+    var name = ORDER[autoIdx++ % ORDER.length], p = PRESETS[name];
+    setTip(p.side, p.vert); pressChip(name); strike();
+  }
+
+  /* ---------- page motion ---------- */
+  reset(); resize(); renderTipValue(); renderPower();
+  setTip(PRESETS.follow.side, PRESETS.follow.vert); pressChip("follow");
+  draw();
+  window.addEventListener("resize", function () { resize(); draw(); });
+
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(function (es) {
+      inView = es[0].isIntersecting;
+      if (inView && !userTouched && !reduced && phase === "aim") nextAuto();
+      else if (inView && phase === "done") kick();
+    }, { threshold: 0.35 }).observe(canvas);
+
+    var video = document.getElementById("heroVideo");
+    new IntersectionObserver(function (es) { es[0].isIntersecting ? (video.play() || { catch: function () {} }).catch(function () {}) : video.pause(); }).observe(video);
+
+    if (!reduced) {
+      var lifts = document.querySelectorAll(".lift");
+      var lo = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.remove("pre"); lo.unobserve(e.target); } }); }, { threshold: 0.05 });
+      lifts.forEach(function (n) {
+        if (n.getBoundingClientRect().top > innerHeight) { n.classList.add("pre"); lo.observe(n); }
+      });
+    }
+  }
+
+  var stageEls = document.querySelectorAll("#stages li"), stageI = 0;
+  function stageTick() { stageEls.forEach(function (s, i) { s.classList.toggle("on", i === stageI); }); stageI = (stageI + 1) % stageEls.length; }
+  stageTick();
+  if (!reduced) setInterval(stageTick, 1500);
+
+  var want = location.hash === "#en" ? "en" : saved() || ((navigator.language || "ru").toLowerCase().indexOf("ru") === 0 ? "ru" : "en");
+  setLang(want, false);
+})();
+</script>
+</body>
+</html>
