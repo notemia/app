@@ -171,6 +171,8 @@ details p { margin-top: 10px; color: var(--ivory-dim); max-width: 66ch; }
 .final { text-align: center; background: radial-gradient(700px 360px at 50% 100%, var(--cloth-lit), transparent 72%); }
 .final .wrap { display: grid; gap: 20px; justify-items: center; }
 footer { padding-block: 24px 36px; color: var(--ivory-dim); font-size: 14px; border-top: 1px solid var(--line); }
+.footer-row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 28px; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 8px 18px; }
 
 /* Small lift when a block scrolls in; it starts visible, so nothing depends on the observer */
 .lift { transition: transform .7s cubic-bezier(.2, .8, .2, 1); }
@@ -404,7 +406,10 @@ footer { padding-block: 24px 36px; color: var(--ivory-dim); font-size: 14px; bor
   </div>
 </section>
 
-<footer><div class="wrap" data-en="Billiards — Advanced Techniques. A simulator and textbook of Russian billiards.">Бильярд — сложные техники. Симулятор и учебник русского бильярда.</div></footer>
+<footer><div class="wrap footer-row">
+  <span data-en="Billiards — Advanced Techniques. A simulator and textbook of Russian billiards.">Бильярд — сложные техники. Симулятор и учебник русского бильярда.</span>
+  <span class="footer-links"><a href="support.html" data-en="Support">Поддержка</a><a href="privacy.html" data-en="Privacy">Приватность</a><a href="https://notemia.app/" data-en="All apps">Все приложения</a></span>
+</div></footer>
 
 <script>
 (function () {
@@ -415,7 +420,7 @@ footer { padding-block: 24px 36px; color: var(--ivory-dim); font-size: 14px; bor
   var nodes = Array.prototype.slice.call(document.querySelectorAll("[data-en]"));
   nodes.forEach(function (n) { n.dataset.ru = n.innerHTML; });
   var lang = "ru";
-  function saved() { try { return localStorage.getItem("lang"); } catch (e) { return null; } }
+  function saved() { try { return localStorage.getItem("notemia-lang"); } catch (e) { return null; } }
   function t(ru, en) { return lang === "en" ? en : ru; }
   function setLang(l, remember) {
     lang = l;
@@ -423,7 +428,7 @@ footer { padding-block: 24px 36px; color: var(--ivory-dim); font-size: 14px; bor
     nodes.forEach(function (n) { n.innerHTML = l === "en" ? n.dataset.en : n.dataset.ru; });
     document.getElementById("lang").textContent = l === "en" ? "Русский" : "English";
     document.querySelectorAll("[data-shot-img]").forEach(function (i) { i.src = "assets/" + i.dataset.shotImg + "_" + l + ".jpg"; });
-    if (remember) { try { localStorage.setItem("lang", l); } catch (e) {} }
+    if (remember) { try { localStorage.setItem("notemia-lang", l); } catch (e) {} }
     renderTipValue(); renderPower(); writeResult();
   }
   document.getElementById("lang").addEventListener("click", function () { setLang(lang === "en" ? "ru" : "en", true); });

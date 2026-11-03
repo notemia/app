@@ -48,7 +48,7 @@ const T = {
   domain_psych:      { ru: "Психология",                     en: "Psychology" },
   domain_psych_sub:  { ru: "Для психологов и их клиентов",    en: "For psychologists and their clients" },
   domain_sport:      { ru: "Здоровье тела и спорт",           en: "Body &amp; Sport" },
-  domain_sport_sub:  { ru: "Падел, сноуборд, ходьба, движение и форма", en: "Padel, snowboarding, walking, movement and fitness" },
+  domain_sport_sub:  { ru: "Падел, сноуборд, бильярд, ходьба, движение и форма", en: "Padel, snowboarding, billiards, walking, movement and fitness" },
   domain_music:      { ru: "Музыкальное — для души",          en: "Music — for the Soul" },
   domain_music_sub:  { ru: "Слух, чувство звука и живое удовольствие от музыки", en: "Hearing, a feel for sound and the living joy of music" },
 
@@ -60,6 +60,14 @@ const T = {
   snowboard_f2:      { ru: "Игра на 5 трассах", en: "Game on 5 courses" },
   snowboard_f3:      { ru: "Падения и подъёмники", en: "Falls and lifts" },
   snowboard_f4:      { ru: "9 языков", en: "9 languages" },
+  billiards_name:    { ru: "Бильярд", en: "Billiards" },
+  billiards_badge:   { ru: "Русский бильярд", en: "Russian billiards" },
+  billiards_tagline: { ru: "Сложные техники русской пирамиды", en: "Advanced Russian pyramid technique" },
+  billiards_desc:    { ru: "Уроки объясняют, почему удар получается, а лаборатория позволяет менять один параметр. В партии ты играешь против честного соперника на столе со строгими лузами.", en: "Lessons explain why a shot works, and the lab lets you change one parameter at a time. In a match you play a fair opponent on a table with strict pockets." },
+  billiards_f1:      { ru: "28 уроков", en: "28 lessons" },
+  billiards_f2:      { ru: "Лаборатория удара", en: "Shot lab" },
+  billiards_f3:      { ru: "5 уровней соперника", en: "5 opponent levels" },
+  billiards_f4:      { ru: "iPhone, iPad и Mac", en: "iPhone, iPad and Mac" },
 
   padl_badge:   { ru: "Падел-теннис", en: "Padel" },
   padl_tagline: { ru: "Падел с нуля: правила, счёт и техника", en: "Padel from scratch: rules, scoring and technique" },
