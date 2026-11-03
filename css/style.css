@@ -1096,6 +1096,11 @@ html[lang="en"] .t-ru { display: none; }
 [data-accent="padl"] .app-card__name { color: var(--padl); }
 [data-accent="padl"] .app-card__links a:hover { color: var(--padl); }
 
+/* ═══ Feel the Turn (Sport group) ═══ */
+:root { --snowboard: #e86a2c; }
+[data-accent="snowboard"] .app-card__name { color: var(--snowboard); }
+[data-accent="snowboard"] .app-card__links a:hover { color: var(--snowboard); }
+
 /* ═══════════════════════════════════════════════
    Three directions: category pills, domain tints,
    and the Music domain (Somatone)

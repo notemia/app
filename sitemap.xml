@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://notemia.app/</loc></url>
+  <url><loc>https://notemia.app/my-uphill/privacy.html</loc></url>
+  <url><loc>https://notemia.app/my-uphill/support.html</loc></url>
+  <url><loc>https://notemia.app/padl/privacy.html</loc></url>
+  <url><loc>https://notemia.app/padl/support.html</loc></url>
+  <url><loc>https://notemia.app/privacy.html</loc></url>
+  <url><loc>https://notemia.app/snowboard/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notemia.app/snowboard/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://notemia.app/snowboard/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notemia.app/snowboard/"/>
+  </url>
+  <url><loc>https://notemia.app/snowboard/privacy.html</loc></url>
+  <url><loc>https://notemia.app/snowboard/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notemia.app/snowboard/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://notemia.app/snowboard/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notemia.app/snowboard/"/>
+  </url>
+  <url><loc>https://notemia.app/snowboard/support.html</loc></url>
+  <url><loc>https://notemia.app/support.html</loc></url>
+</urlset>

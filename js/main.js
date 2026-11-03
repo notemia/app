@@ -48,11 +48,19 @@ const T = {
   domain_psych:      { ru: "Психология",                     en: "Psychology" },
   domain_psych_sub:  { ru: "Для психологов и их клиентов",    en: "For psychologists and their clients" },
   domain_sport:      { ru: "Здоровье тела и спорт",           en: "Body &amp; Sport" },
-  domain_sport_sub:  { ru: "Падел, ходьба, движение и форма", en: "Padel, walking, movement and fitness" },
+  domain_sport_sub:  { ru: "Падел, сноуборд, ходьба, движение и форма", en: "Padel, snowboarding, walking, movement and fitness" },
   domain_music:      { ru: "Музыкальное — для души",          en: "Music — for the Soul" },
   domain_music_sub:  { ru: "Слух, чувство звука и живое удовольствие от музыки", en: "Hearing, a feel for sound and the living joy of music" },
 
   // ── Padl ──────────────────────────────────────
+  snowboard_badge:   { ru: "Сноуборд", en: "Snowboarding" },
+  snowboard_tagline: { ru: "Как кататься на сноуборде: 3D-уроки для новичков", en: "How to snowboard: 3D lessons for beginners" },
+  snowboard_desc:    { ru: "Каждый поворот в 3D и в замедлении: что делает тело, как отвечает доска и что получается на склоне. Падения, подъёмники и правила склона. 21 урок на 7 уровнях, без интернета и аккаунта.", en: "Every turn in slow-motion 3D: what your body does, how the board responds and what happens on the slope. Falls, lifts and slope rules. 21 lessons in 7 levels, offline, no account." },
+  snowboard_f1:      { ru: "21 урок", en: "21 lessons" },
+  snowboard_f2:      { ru: "Повороты по шагам", en: "Turns step by step" },
+  snowboard_f3:      { ru: "Падения и подъёмники", en: "Falls and lifts" },
+  snowboard_f4:      { ru: "9 языков", en: "9 languages" },
+
   padl_badge:   { ru: "Падел-теннис", en: "Padel" },
   padl_tagline: { ru: "Падел с нуля: правила, счёт и техника", en: "Padel from scratch: rules, scoring and technique" },
   padl_desc: {
