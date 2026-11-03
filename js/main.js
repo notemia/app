@@ -48,37 +48,37 @@ const T = {
   domain_psych:      { ru: "Психология",                     en: "Psychology" },
   domain_psych_sub:  { ru: "Для психологов и их клиентов",    en: "For psychologists and their clients" },
   domain_sport:      { ru: "Здоровье тела и спорт",           en: "Body &amp; Sport" },
-  domain_sport_sub:  { ru: "Падел, сноуборд, бильярд, ходьба, движение и форма", en: "Padel, snowboarding, billiards, walking, movement and fitness" },
+  domain_sport_sub:  { ru: "Падел, сноуборд, русский бильярд, ходьба в гору", en: "Padel, snowboarding, Russian billiards, uphill walking" },
   domain_music:      { ru: "Музыкальное — для души",          en: "Music — for the Soul" },
   domain_music_sub:  { ru: "Слух, чувство звука и живое удовольствие от музыки", en: "Hearing, a feel for sound and the living joy of music" },
 
   // ── Padl ──────────────────────────────────────
   snowboard_badge:   { ru: "Сноуборд", en: "Snowboarding" },
-  snowboard_tagline: { ru: "Сноуборд: 3D-уроки и игра", en: "Snowboarding: 3D lessons and a riding game" },
-  snowboard_desc:    { ru: "Уроки показывают каждое движение в 3D и в замедлении. В игре ты катаешься сам на пяти трассах, наклоняя телефон. Без интернета и аккаунта.", en: "Lessons show every move in slow-motion 3D. In the game, you ride five courses yourself by tilting your phone. Offline, no account." },
+  snowboard_tagline: { ru: "3D-уроки сноуборда для новичков и игра", en: "3D snowboarding lessons for beginners, plus a riding game" },
+  snowboard_desc:    { ru: "21 урок для взрослых новичков: от стойки и первого скольжения до связанных поворотов, а также падения, подъёмники и правила на склоне. Каждое движение показано на 3D-модели: его можно замедлить, остановить на любом шаге и посмотреть с другого ракурса. Отдельно есть игра с упрощённой физикой: пять придуманных трасс, доской управляют наклоном iPhone. Без интернета и аккаунта.", en: "21 lessons for adult beginners, from stance and first glides to linked turns, plus falling, lifts and slope rules. Every move is shown on a 3D model: you can slow it down, pause on any step or change the angle. There is also a game with simplified physics: five invented courses where you steer the board by tilting your iPhone. Works offline, no account." },
   snowboard_f1:      { ru: "21 урок", en: "21 lessons" },
   snowboard_f2:      { ru: "Игра на 5 трассах", en: "Game on 5 courses" },
   snowboard_f3:      { ru: "Падения и подъёмники", en: "Falls and lifts" },
   snowboard_f4:      { ru: "9 языков", en: "9 languages" },
   billiards_name:    { ru: "Бильярд", en: "Billiards" },
   billiards_badge:   { ru: "Русский бильярд", en: "Russian billiards" },
-  billiards_tagline: { ru: "Сложные техники русской пирамиды", en: "Advanced Russian pyramid technique" },
-  billiards_desc:    { ru: "Уроки объясняют, почему удар получается, а лаборатория позволяет менять один параметр. В партии ты играешь против честного соперника на столе со строгими лузами.", en: "Lessons explain why a shot works, and the lab lets you change one parameter at a time. In a match you play a fair opponent on a table with strict pockets." },
+  billiards_tagline: { ru: "Симулятор и уроки сложных техник русской пирамиды", en: "A simulator with lessons in advanced Russian pyramid technique" },
+  billiards_desc:    { ru: "28 уроков: контроль битка, накат и оттяжка, боковое вращение, свояки, игра от борта, отыгрыш и стратегия. В лаборатории можно расставить шары и сравнить два удара, меняя один параметр. Партии идут по правилам МКП 2025, в свободную и комбинированную пирамиду: против соперника пяти уровней или вдвоём на одном устройстве. Стол 12 футов, строгие лузы. Без интернета и аккаунта.", en: "28 lessons cover cue ball control, follow and draw, side spin, in-offs, cushion shots, safety play and strategy. In the lab, you set up the balls and compare two shots, changing one parameter at a time. Matches follow the IPA (MKP) 2025 rules for free and combined pyramid, against an opponent with five levels or with another player on one device. 12-foot table, strict pockets. Works offline, no account." },
   billiards_f1:      { ru: "28 уроков", en: "28 lessons" },
   billiards_f2:      { ru: "Лаборатория удара", en: "Shot lab" },
   billiards_f3:      { ru: "5 уровней соперника", en: "5 opponent levels" },
   billiards_f4:      { ru: "iPhone, iPad и Mac", en: "iPhone, iPad and Mac" },
 
-  padl_badge:   { ru: "Падел-теннис", en: "Padel" },
-  padl_tagline: { ru: "Падел с нуля: правила, счёт и техника", en: "Padel from scratch: rules, scoring and technique" },
+  padl_badge:   { ru: "Падел", en: "Padel" },
+  padl_tagline: { ru: "Падел для новичков: правила, счёт и удары", en: "Padel for beginners: rules, scoring and shots" },
   padl_desc: {
-    ru: "Самый простой способ разобраться в падел до первой игры и удобный помощник на корте. 9 уроков для новичка, умный счёт по правилам падел, разбор ударов, тактика углов и турниры Americana/Mexicano. Полностью офлайн, без аккаунта. Русский, English, Español.",
-    en: "The easiest way to understand padel before your first match — and a handy on-court tool. 9 beginner lessons, a real padel scoreboard, a shot library, angle tactics and Americana/Mexicano tournaments. Fully offline, no account. English, Russian, Spanish."
+    ru: "Для тех, кто ещё не играл в падел. 9 коротких уроков объясняют правила, корт, счёт, подачу, игру со стенами и расстановку на корте. Во время игры приложение ведёт счёт и проводит турниры Americana и Mexicano. Есть справочник по технике ударов и симулятор отскока мяча от стен. Бесплатно, без интернета и аккаунта. Русский, английский и испанский.",
+    en: "For people who have never played padel. Nine short lessons cover the rules, the court, scoring, the serve, playing off the walls and where to stand. During a game, the app keeps score and runs Americana and Mexicano tournaments. It also has a guide to shot technique and a simulator of how the ball bounces off the walls. Free, works offline, no account. English, Russian and Spanish."
   },
-  padl_f1: { ru: "9 уроков новичку", en: "9 beginner lessons" },
-  padl_f2: { ru: "Умный счёт",       en: "Smart scoreboard" },
-  padl_f3: { ru: "Удары и тактика",  en: "Shots &amp; tactics" },
-  padl_f4: { ru: "Турниры",          en: "Tournaments" },
+  padl_f1: { ru: "9 уроков для новичков", en: "9 beginner lessons" },
+  padl_f2: { ru: "Счёт матча",       en: "Match scoring" },
+  padl_f3: { ru: "Техника ударов",  en: "Shot technique" },
+  padl_f4: { ru: "Americana и Mexicano",          en: "Americana &amp; Mexicano" },
 
   // ── Somatone ──────────────────────────────────
   somatone_badge:   { ru: "Тренировка слуха", en: "Ear Training" },
@@ -104,11 +104,11 @@ const T = {
   group_health_count:  { ru: "1 приложение",                     en: "1 app" },
 
   // ── My Uphill ─────────────────────────────────
-  myuphill_badge:   { ru: "Горные прогулки", en: "Mountain Walks" },
-  myuphill_tagline: { ru: "Для тех, кто любит горы и ходит в них ради здоровья и хорошей формы", en: "For people who love the mountains and walk them for their health and fitness" },
+  myuphill_badge:   { ru: "Ходьба в гору", en: "Uphill walking" },
+  myuphill_tagline: { ru: "Запись подъёмов и прогресс при ходьбе в гору", en: "Records your uphill walks and tracks your progress" },
   myuphill_desc: {
-    ru: "Приложение превращает привычные маршруты в способ следить за своей физической формой: сравнивайте подъёмы и оценивайте прогресс. Насколько эффективной была нагрузка? Как меняются кардиоформа и выносливость? Как эти тренировки помогают сохранять здоровье и активность с возрастом? Понятная аналитика на iPhone: без умных часов, интернета, регистрации и сложных настроек. 7 дней бесплатно, затем разовая покупка без подписки.",
-    en: "The app turns your familiar routes into a way to keep track of your fitness: compare your climbs and see how you are progressing. How demanding was the effort? How are your cardio fitness and endurance changing? How do these walks help you stay healthy and active as the years go by? Clear analytics on your iPhone: no smartwatch, no internet, no sign-up, no complicated settings. 7 days free, then a one-time purchase, no subscription."
+    ru: "Записывает подъёмы с помощью датчиков iPhone: время, шаги, набор высоты и скорость, а также оценивает активные калории. Подъёмы на одном маршруте можно сравнивать между собой и видеть, как меняется форма. Маршрутов может быть до трёх. После подъёма можно отметить, насколько было тяжело, и ввести пульс, измеренный вручную. Есть журнал веса. Часы, интернет и регистрация не нужны. 7 дней бесплатно, затем разовая покупка, без подписки.",
+    en: "Records your uphill walks with the iPhone's sensors: time, steps, elevation gain and speed, plus an estimate of active calories. Compare walks on the same route to see how your fitness is changing. You can keep up to three routes. After a walk, you can note how hard it felt and enter a pulse you measured by hand. There is also a weight log. No watch, internet or sign-up needed. 7 days free, then a one-time purchase, no subscription."
   },
 
   myuphill_f1: { ru: "1–3 маршрута",          en: "1–3 routes" },
