@@ -55,8 +55,8 @@ const T = {
   // ── Padl ──────────────────────────────────────
   snowboard_badge:   { ru: "Сноуборд", en: "Snowboarding" },
   snowboard_tagline: { ru: "3D-уроки сноуборда для новичков и игра", en: "3D snowboarding lessons for beginners, plus a riding game" },
-  snowboard_desc:    { ru: "21 урок для взрослых новичков: от стойки и первого скольжения до связанных поворотов, а также падения, подъёмники и правила на склоне. Каждое движение показано на 3D-модели: его можно замедлить, остановить на любом шаге и посмотреть с другого ракурса. Отдельно есть игра с упрощённой физикой: пять придуманных трасс, доской управляют наклоном iPhone. Без интернета и аккаунта.", en: "21 lessons for adult beginners, from stance and first glides to linked turns, plus falling, lifts and slope rules. Every move is shown on a 3D model: you can slow it down, pause on any step or change the angle. There is also a game with simplified physics: five invented courses where you steer the board by tilting your iPhone. Works offline, no account." },
-  snowboard_f1:      { ru: "21 урок", en: "21 lessons" },
+  snowboard_desc:    { ru: "23 урока для взрослых новичков: от стойки и первого скольжения до связанных поворотов, а также падения, подъёмники и правила на склоне. Каждое движение показано на 3D-модели: его можно замедлить, остановить на любом шаге и посмотреть с другого ракурса. Отдельно есть игра с упрощённой физикой: пять придуманных трасс, доской управляют наклоном iPhone. Без интернета и аккаунта.", en: "23 lessons for adult beginners, from stance and first glides to linked turns, plus falling, lifts and slope rules. Every move is shown on a 3D model: you can slow it down, pause on any step or change the angle. There is also a game with simplified physics: five invented courses where you steer the board by tilting your iPhone. Works offline, no account." },
+  snowboard_f1:      { ru: "23 урока", en: "23 lessons" },
   snowboard_f2:      { ru: "Игра на 5 трассах", en: "Game on 5 courses" },
   snowboard_f3:      { ru: "Падения и подъёмники", en: "Falls and lifts" },
   snowboard_f4:      { ru: "9 языков", en: "9 languages" },
