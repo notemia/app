@@ -16,6 +16,13 @@
     rises.forEach(function (el) { el.classList.add('in'); });
   }
 
+  // Language menu: close on outside click or Escape.
+  var langs = document.querySelector('.langs');
+  if (langs) {
+    document.addEventListener('click', function (e) { if (!langs.contains(e.target)) langs.open = false; });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') langs.open = false; });
+  }
+
   // Videos play only while on screen, and never under reduced motion.
   document.querySelectorAll('video[data-loop]').forEach(function (v) {
     if (reduce) { v.controls = true; return; }
