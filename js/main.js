@@ -39,58 +39,14 @@ const T = {
     en: "Choose Your Direction"
   },
   apps_sub: {
-    ru: "Каждое приложение решает конкретную задачу. Три направления — для специалистов и клиентов, для тела и для души.",
-    en: "Each app solves a concrete task. Three directions — for professionals and clients, for the body and for the soul."
+    ru: "Каждое приложение решает конкретную задачу: для психологов — по своей модальности, для клиентов — между сессиями.",
+    en: "Each app solves a concrete task: for psychologists, by modality; for clients, between sessions."
   },
 
   // ── Domain dividers ───────────────────────────
   domain_k:          { ru: "Направление",                    en: "Domain" },
   domain_psych:      { ru: "Психология",                     en: "Psychology" },
   domain_psych_sub:  { ru: "Для психологов и их клиентов",    en: "For psychologists and their clients" },
-  domain_sport:      { ru: "Здоровье тела и спорт",           en: "Body &amp; Sport" },
-  domain_sport_sub:  { ru: "Падел, сноуборд, русский бильярд, ходьба в гору", en: "Padel, snowboarding, Russian billiards, uphill walking" },
-  domain_music:      { ru: "Музыкальное — для души",          en: "Music — for the Soul" },
-  domain_music_sub:  { ru: "Слух, чувство звука и живое удовольствие от музыки", en: "Hearing, a feel for sound and the living joy of music" },
-
-  // ── Padl ──────────────────────────────────────
-  snowboard_badge:   { ru: "Сноуборд", en: "Snowboarding" },
-  snowboard_tagline: { ru: "3D-уроки сноуборда для новичков и игра", en: "3D snowboarding lessons for beginners, plus a riding game" },
-  snowboard_desc:    { ru: "23 урока для взрослых новичков: от стойки и первого скольжения до связанных поворотов, а также падения, подъёмники и правила на склоне. Каждое движение показано на 3D-модели: его можно замедлить, остановить на любом шаге и посмотреть с другого ракурса. Отдельно есть игра с упрощённой физикой: пять придуманных трасс, доской управляют наклоном iPhone. Без интернета и аккаунта.", en: "23 lessons for adult beginners, from stance and first glides to linked turns, plus falling, lifts and slope rules. Every move is shown on a 3D model: you can slow it down, pause on any step or change the angle. There is also a game with simplified physics: five invented courses where you steer the board by tilting your iPhone. Works offline, no account." },
-  snowboard_f1:      { ru: "23 урока", en: "23 lessons" },
-  snowboard_f2:      { ru: "Игра на 5 трассах", en: "Game on 5 courses" },
-  snowboard_f3:      { ru: "Падения и подъёмники", en: "Falls and lifts" },
-  snowboard_f4:      { ru: "9 языков", en: "9 languages" },
-  billiards_name:    { ru: "Бильярд", en: "Billiards" },
-  billiards_badge:   { ru: "Русский бильярд", en: "Russian billiards" },
-  billiards_tagline: { ru: "Симулятор и уроки сложных техник русской пирамиды", en: "A simulator with lessons in advanced Russian pyramid technique" },
-  billiards_desc:    { ru: "28 уроков: контроль битка, накат и оттяжка, боковое вращение, свояки, игра от борта, отыгрыш и стратегия. В лаборатории можно расставить шары и сравнить два удара, меняя один параметр. Партии идут по правилам МКП 2025, в свободную и комбинированную пирамиду: против соперника пяти уровней или вдвоём на одном устройстве. Стол 12 футов, строгие лузы. Без интернета и аккаунта.", en: "28 lessons cover cue ball control, follow and draw, side spin, in-offs, cushion shots, safety play and strategy. In the lab, you set up the balls and compare two shots, changing one parameter at a time. Matches follow the IPA (MKP) 2025 rules for free and combined pyramid, against an opponent with five levels or with another player on one device. 12-foot table, strict pockets. Works offline, no account." },
-  billiards_f1:      { ru: "28 уроков", en: "28 lessons" },
-  billiards_f2:      { ru: "Лаборатория удара", en: "Shot lab" },
-  billiards_f3:      { ru: "5 уровней соперника", en: "5 opponent levels" },
-  billiards_f4:      { ru: "iPhone, iPad и Mac", en: "iPhone, iPad and Mac" },
-
-  padl_badge:   { ru: "Падел", en: "Padel" },
-  padl_tagline: { ru: "Падел для новичков: правила, счёт и удары", en: "Padel for beginners: rules, scoring and shots" },
-  padl_desc: {
-    ru: "Для тех, кто ещё не играл в падел. 9 коротких уроков объясняют правила, корт, счёт, подачу, игру со стенами и расстановку на корте. Во время игры приложение ведёт счёт и проводит турниры Americana и Mexicano. Есть справочник по технике ударов и симулятор отскока мяча от стен. Бесплатно, без интернета и аккаунта. Русский, английский и испанский.",
-    en: "For people who have never played padel. Nine short lessons cover the rules, the court, scoring, the serve, playing off the walls and where to stand. During a game, the app keeps score and runs Americana and Mexicano tournaments. It also has a guide to shot technique and a simulator of how the ball bounces off the walls. Free, works offline, no account. English, Russian and Spanish."
-  },
-  padl_f1: { ru: "9 уроков для новичков", en: "9 beginner lessons" },
-  padl_f2: { ru: "Счёт матча",       en: "Match scoring" },
-  padl_f3: { ru: "Техника ударов",  en: "Shot technique" },
-  padl_f4: { ru: "Americana и Mexicano",          en: "Americana &amp; Mexicano" },
-
-  // ── Somatone ──────────────────────────────────
-  somatone_badge:   { ru: "Тренировка слуха", en: "Ear Training" },
-  somatone_tagline: { ru: "Почувствуй звук. Узнай ноту.", en: "Feel pitch. Know the note." },
-  somatone_desc: {
-    ru: "У каждой ноты есть ощущение. Somatone развивает относительный и абсолютный слух через чувство звука: ты находишь, где нота живёт у тебя, закрепляешь это ощущение и привязываешь к нему ноты и мелодии. 13 упражнений на настоящей музыке, честный прогресс по пяти навыкам отдельно. Пой или просто слушай. Всё на устройстве, без аккаунтов. Девять языков.",
-    en: "Every note has a feel. Somatone builds relative and absolute pitch through sensation: you find where a note lives for you, anchor that feeling, then tie notes and melodies to it. 13 exercises on real music, honest progress across five skills measured separately. Sing or just listen. All on-device, no accounts. Nine languages."
-  },
-  somatone_f1: { ru: "13 упражнений",   en: "13 exercises" },
-  somatone_f2: { ru: "5 навыков слуха", en: "5 hearing skills" },
-  somatone_f3: { ru: "Пение по желанию", en: "Singing optional" },
-  somatone_f4: { ru: "9 языков",        en: "9 languages" },
 
   // ── Group headers ─────────────────────────────
   group_pro_label:    { ru: "Для психологов",                    en: "For Psychologists" },
@@ -99,23 +55,6 @@ const T = {
   group_clients_label: { ru: "Для клиентов",                     en: "For Clients" },
   group_clients_title: { ru: "Самопомощь между сессиями",        en: "Self-Help Between Sessions" },
   group_clients_count: { ru: "3 приложения",                     en: "3 apps" },
-  group_health_label:  { ru: "Физическое здоровье",              en: "Physical Health" },
-  group_health_title:  { ru: "Движение и выносливость",          en: "Movement &amp; Endurance" },
-  group_health_count:  { ru: "1 приложение",                     en: "1 app" },
-
-  // ── My Uphill ─────────────────────────────────
-  myuphill_badge:   { ru: "Ходьба в гору", en: "Uphill walking" },
-  myuphill_tagline: { ru: "Запись подъёмов и прогресс при ходьбе в гору", en: "Records your uphill walks and tracks your progress" },
-  myuphill_desc: {
-    ru: "Записывает подъёмы с помощью датчиков iPhone: время, шаги, набор высоты и скорость, а также оценивает активные калории. Подъёмы на одном маршруте можно сравнивать между собой и видеть, как меняется форма. Маршрутов может быть до трёх. После подъёма можно отметить, насколько было тяжело, и ввести пульс, измеренный вручную. Есть журнал веса. Часы, интернет и регистрация не нужны. 7 дней бесплатно, затем разовая покупка, без подписки.",
-    en: "Records your uphill walks with the iPhone's sensors: time, steps, elevation gain and speed, plus an estimate of active calories. Compare walks on the same route to see how your fitness is changing. You can keep up to three routes. After a walk, you can note how hard it felt and enter a pulse you measured by hand. There is also a weight log. No watch, internet or sign-up needed. 7 days free, then a one-time purchase, no subscription."
-  },
-
-  myuphill_f1: { ru: "1–3 маршрута",          en: "1–3 routes" },
-  myuphill_f2: { ru: "Вертикальная скорость", en: "Vertical speed" },
-  myuphill_f3: { ru: "Журнал веса",           en: "Weight log" },
-  myuphill_f4: { ru: "9 языков",              en: "9 languages" },
-  tag_soon:    { ru: "скоро в App Store",     en: "coming soon to the App Store" },
 
   // ── PsyMap ────────────────────────────────────
   psymap_badge:   { ru: "Для специалистов", en: "For Professionals" },
@@ -331,8 +270,8 @@ const T = {
   privacy_title: { ru: "Политика конфиденциальности Notemia apps", en: "Privacy Policy — Notemia apps" },
   privacy_sub:   { ru: "Последнее обновление: февраль 2026",        en: "Last updated: February 2026" },
   priv_intro: {
-    ru: "Настоящая политика распространяется на все приложения Notemia apps: PsyMap, Couple Bridge, 2Reframe, Learn to Feel, Гештальт мастерская, КПТ мастерская, ТА мастерская и Психоанализ мастерская. Приложение <a href='my-uphill/privacy.html'>My Uphill</a> имеет отдельную политику конфиденциальности (данные движения, разовая покупка вместо подписки).",
-    en: "This policy applies to all Notemia apps: PsyMap, Couple Bridge, 2Reframe, Learn to Feel, Gestalt Mastery, CBT Mastery, TA Mastery and Psychoanalysis Mastery. <a href='my-uphill/privacy.html'>My Uphill</a> has its own privacy policy (motion data, one-time purchase instead of a subscription)."
+    ru: "Настоящая политика распространяется на все приложения Notemia apps: PsyMap, Couple Bridge, 2Reframe, Learn to Feel, Гештальт мастерская, КПТ мастерская, ТА мастерская и Психоанализ мастерская.",
+    en: "This policy applies to all Notemia apps: PsyMap, Couple Bridge, 2Reframe, Learn to Feel, Gestalt Mastery, CBT Mastery, TA Mastery and Psychoanalysis Mastery."
   },
   priv_1_t: { ru: "Ваши данные", en: "Your Data" },
   priv_1_d: {
