@@ -268,7 +268,7 @@ const T = {
 
   // ── Privacy page ──────────────────────────────
   privacy_title: { ru: "Политика конфиденциальности Notemia apps", en: "Privacy Policy — Notemia apps" },
-  privacy_sub:   { ru: "Последнее обновление: февраль 2026",        en: "Last updated: February 2026" },
+  privacy_sub:   { ru: "Последнее обновление: ноябрь 2026",        en: "Last updated: November 2026" },
   priv_intro: {
     ru: "Настоящая политика распространяется на все приложения Notemia apps: PsyMap, Couple Bridge, 2Reframe, Learn to Feel, Гештальт мастерская, КПТ мастерская, ТА мастерская и Психоанализ мастерская.",
     en: "This policy applies to all Notemia apps: PsyMap, Couple Bridge, 2Reframe, Learn to Feel, Gestalt Mastery, CBT Mastery, TA Mastery and Psychoanalysis Mastery."
@@ -278,10 +278,10 @@ const T = {
     ru: "Все приложения Notemia apps хранят данные исключительно на вашем устройстве. Мы не собираем, не передаём и не продаём никакую персональную информацию. Регистрация не требуется. Трекинг отсутствует.",
     en: "All Notemia apps store data exclusively on your device. We do not collect, transmit, or sell any personal information. No registration required. No tracking."
   },
-  priv_2_t: { ru: "Подписки", en: "Subscriptions" },
+  priv_2_t: { ru: "Покупки и подписки", en: "Purchases and subscriptions" },
   priv_2_d: {
-    ru: "При оформлении подписки оплата обрабатывается Apple через App Store. Мы не имеем доступа к вашим платёжным данным. Подробности — в политике конфиденциальности Apple.",
-    en: "Subscription payments are processed by Apple through the App Store. We do not have access to your payment information. See Apple's privacy policy for details."
+    ru: "Оплата покупок и подписок обрабатывается Apple через App Store. Мы не имеем доступа к вашим платёжным данным. Подробности — в политике конфиденциальности Apple.",
+    en: "Payments for purchases and subscriptions are processed by Apple through the App Store. We do not have access to your payment information. See Apple's privacy policy for details."
   },
   priv_3_t: { ru: "Аналитика Apple", en: "Apple Analytics" },
   priv_3_d: {
@@ -409,14 +409,15 @@ function initSmoothScroll() {
 
 // ── Init ──────────────────────────────────────
 document.addEventListener("DOMContentLoaded", () => {
-  setLang(currentLang);
+  const isStatic = document.documentElement.hasAttribute("data-static");
+  if (!isStatic) setLang(currentLang);
   initAnimations();
   initNavScroll();
   initBurger();
   initFAQ();
   initSmoothScroll();
 
-  document.querySelectorAll(".lang-btn").forEach(btn => {
+  if (!isStatic) document.querySelectorAll(".lang-btn").forEach(btn => {
     btn.addEventListener("click", () => setLang(btn.getAttribute("data-lang")));
   });
 });

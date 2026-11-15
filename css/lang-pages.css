@@ -1,0 +1,9 @@
+/* Extras for the static per-language pages (/<lang>/…) */
+html:not([lang="ru"]) .ru-only { display: none !important; }
+.lang-select {
+  font: inherit; font-size: .85rem; font-weight: 600;
+  color: inherit; background: transparent;
+  border: 1px solid rgba(128,128,128,.45); border-radius: 8px;
+  padding: 6px 10px; cursor: pointer; max-width: 11rem;
+}
+.lang-select option { color: #111; }
